@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Сайт диплом</title>
+
+  <script src="jquery-3.4.0.min.js"></script>
+  <link rel="stylesheet" href="swiper.min.css">
+<!-- с адаптивными элементами / задаю обе координаты, скрутку, прозрачность скриптом в $().css(transform/matrix) -->
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="style-73.css">
+  <script src="popup-73.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-line">
+      <div class="header-line__block">
+        <nav class="header-line__nav">
+          <ul class="header-line__nav-list">
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Стоимость</a></li>
+          </ul>
+        </nav>
+        <div class="header-line__phone">
+          <div class="header-line__phone-box">+7 (953) 552-05-48</div>
+          <button class="telbook-call header-line__phone_button" name="book-call">Звони</button>
+          <div class="header-line__phonetext">
+            <a class="fa fa-phone" href="tel:#" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="central-container">
+      <article class="central-container__personal">
+        <div class="central-container__personal-leftcol">
+          <h1 class="central-container__personal-nametext">Андрей Ванжа</h1>
+          <p class="central-container__personal-showtext">Frontend разработчик и веб-верстальщик</p>
+          <!--<button class="press-button central-container__personal-button" name="info-button">Узнать больше</button>-->
+        </div>
+
+        <!--<div class="central-container__personal-rightcol">
+          <div class="central-container__personal-authorpic central-container__personal-authorpic-position">
+            <div>
+              <img src="img/man.png" alt="изображение автора png">
+            </div>
+          </div>
+        </div>-->
+
+        <div class="central-container__redtag small-sign1">#</div>
+        <div class="central-container__redtag small-sign2">&#60;&#8260;&#62;</div><!-- </> -->
+        <div class="central-container__redtag small-sign3">{&#160;}</div>
+        <div class="central-container__redtag small-sign4">&#60;div&#62;</div><!-- <div> -->
+        <div class="central-container__redtag small-sign5">&#60;div&#62;</div><!-- <div> -->
+
+      </article>
+
+      <div class="fixed-container">
+        <article class="fixed-container__deal">
+          <h2 class="fixed-container__deal-anno">Что я делаю</h2>
+          <div class="fixed-container__dealbox fixed-container__dealbox-position">
+            <a href="#" target="_blank">
+              <p>Верстка лендинг-страниц и сайтов любой сложности</p>
+            </a>
+            <a href="#" target="_blank">
+              <p>Адаптивная верстка под все браузеры и устройства</p>
+            </a>
+            <a href="#" target="_blank">
+              <p>frontend-разработка и программирование</p>
+            </a>
+            <a href="#" target="_blank">
+              <p>Исправление и доработка существующей верстки</p>
+            </a>
+          </div>
+          <!--<button class="press-button fixed-container__deal-pricebutton">Узнать стоимость</button>-->
+        </article>
+      </div>
+
+      <div class="examples-container">
+        <article class="examples-container__examples">
+          <h2>Примеры моих работ</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="site1/index-site1.html" class="unit-box" target="_blank">
+                  <img class="site-pic1" src="img/pic-1.png" alt="мой сайт №1">
+                  <h3 class="site-title">Учебная задача (1 страница, адаптивная верстка)</h3>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="site2/sedona-site2.html" class="unit-box" target="_blank">
+                  <img class="site-pic2" src="img/pic-2.jpg" alt="мой сайт №2">
+                  <h3 class="site-title">Учебная задача из 2х страниц</h3>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="site3/visa-site3.html" class="unit-box" target="_blank">
+                  <img class="site-pic3" src="img/pic-3.jpg" alt="мой сайт №3">
+                  <h3 class="site-title">Моя первая учебная страница</h3>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="site4/index-site4.html" class="unit-box" target="_blank">
+                  <img class="site-pic4" src="img/pic-4.png" alt="мой сайт №4">
+                  <h3 class="site-title">Учебная иллюстрация jQuery</h3>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="unit-box" target="_blank">
+                  <img class="site-pic5" src="img/pic-5.png" alt="мой сайт №5">
+                  <h3 class="site-title">Сайт #5 (в разработке)</h3>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next">
+              <svg width="30" height="30">
+                <polyline points="8,3 20,14 8,26" stroke="#8993ad" stroke-width="2" fill="none" />
+              </svg>
+            </div>
+            <div class="swiper-button-prev">
+              <svg width="30" height="30">
+                <polyline points="22,3 10,14 22,26" stroke="#8993ad" stroke-width="2" fill="none" />
+              </svg>
+            </div>
+          </div>
+
+          <!--<button class="press-button project-button-position">Заказать проект</button>-->
+        </article>
+      </div>
+    </section>
+
+    <section class="price-container">
+      <article class="price-container__article">
+        <h2>Адаптивная верстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*</h2>
+        <p>* Сроки и стоимость могут отличаться от заявленных и рассчитываются индивидуально в
+          зависимости от сложности задачи</p>
+      </article>
+
+      <div class="central-container__whitetag small-sign1">#</div>
+      <div class="central-container__whitetag small-sign2">&#60;&#8260;&#62;</div><!-- </> -->
+      <div class="central-container__whitetag small-sign3">{&#160;}</div>
+      <div class="central-container__whitetag small-sign4">&#60;div&#62;</div><!-- <div> -->
+      <div class="central-container__whitetag small-sign5">&#60;div&#62;</div><!-- <div> -->
+  </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-container__stripe">
+        <div class="footer-container__leftblock">
+          <ul class="header-line__nav-list">
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Стоимость</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-container__centralblock">
+          <a class="footer-container__phonetext fa fa-phone" href="tel:#" target="_blank">
+            <p>+7 (953) 552-05-48</p>
+          </a>
+          <a class="footer-container__mailtext fa fa-envelope" href="mailto:andreww1762@gmail.com" target="_blank">
+            <p>andreww1762@gmail.com</p>
+          </a>
+        </div>
+
+        <div class="footer-container__rightblock">
+          <button class="telbook-call footer-container__phonebutton" name="book-call">Звони</button>
+          <div class="contact-box">
+            <a href="#" target="_blank"></a>
+            <a href="#" target="_blank"></a>
+            <a href="#" target="_blank"></a>
+            <a href="#" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright-bar">
+      <p>&#169; Андрей Ванжа, 2018-2019</p>
+    </div>
+  </footer>
+
+  <script src="swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      slidesPerView: numPic,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      freeMode: true,
+      spaceBetween: 23
+    });
+  </script>
+
+</body>
+
+</html>

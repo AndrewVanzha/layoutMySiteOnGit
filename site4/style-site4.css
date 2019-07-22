@@ -1,0 +1,70 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, serif;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+div .header-block {
+  margin: 0;
+  padding: 0;
+  background-color: aquamarine;
+}
+
+.header-block div {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.leftscore-box {
+  background-color: lightseagreen;
+}
+
+.rightscore-box {
+  background-color: lightgreen;
+}
+
+.leftscore,
+.rightscore {
+  display: none;
+  color: red;
+  font-weight: 800;
+  background-color: inherit;
+}
+
+.football {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.field {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.ball {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*width: 100px;
+  height: 100px;*/
+}
+
+@media (max-width: 992px) {
+  .header-block div h1 {
+    font-size: 16px;
+  }
+
+  button .stop-move {
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Сайт по оформлению виз, учебный вариант</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato|Oswald&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style-visa.css">
+  <link type="image/x-icon" rel="shortcut icon" href="images/fav1.ico">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/popup-visa.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row d-flex justify-content-around align-items-center header-block">
+        <div class="col-lg-3 p-3">
+          <img src="images/pic10.jpg" class="header-block__brand-pic" height="120" alt="марка">
+        </div>
+
+        <div class="col-lg-3 p-3 header-block__timetable">
+          <p class="header-block__timetable_working">Мы работаем ежедневно</p>
+          <p class="header-block__timetable_hours">с 10:00 до 21:00</p>
+        </div>
+
+        <div class="col-lg-3 p-2 header-block__contactinfo">
+          <p>+7 (777) 777-77-77</p>
+          <a href="mailto:info@vvisa.ru">info@vvisa.ru</a>
+          <a href="#contacts">м. Октябрьское поле</a>
+          <a href="#contacts">ул. Маршала Малиновского д.8</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid header-nav">
+      <!-- здесь фоновая картинка background-image: -->
+      <div class="row bg-light header-nav__navbar">
+        <div class="container d-flex justify-content-start header-nav__navbar-box">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index-visa.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#chapter2">Список стран</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#chapter3">Преимущества</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#chapter4">Почему мы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#chapter5">Как мы работаем</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#chapter6">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!--<div class="col-lg-2 p-3 header-nav__navbar_btn">
+        <button class="btn btn-danger" type="submit"><i class="fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp;Заказать
+          звонок</button>
+      </div>-->
+      <!--<button class="btn btn-danger my-2 my-sm-0" type="submit"><i class="fa fa-phone fa-fw"
+          aria-hidden="true"></i>&nbsp;Заказать
+        звонок</button>-->
+    </div>
+
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row d-flex justify-content-center container__anno">
+        <div class="col-lg-12">
+          <h1 class="container__mainheader">Сделаем визу быстро</h1>
+        </div>
+        <div class="col-lg-12">
+          <p class="container__visa1">в Индию, ОАЭ, Шенген</p>
+        </div>
+        <div class="col-lg-12">
+          <p class="container__visa2">В Москве, а так же дистанционное оформление по всей России</p>
+        </div>
+      </div>
+
+      <div class="row w-50 d-flex container__form">
+        <div class="col-lg-10 container__form_stamptext">
+          <p class="p-2 text-center">Без очередей и нервов</p>
+        </div>
+        <div class="col-lg-12 container__form_block">
+          <div class="container__form_boxorder">
+            <h3 class="h3" id="chapter7">Оставьте заявку</h3>
+            <p class="text-center container__form_text">на Бесплатную консультацию визового эксперта</p>
+
+            <form>
+              <div class="form-group container__form_nameblock">
+                <label for="nameInputBox"></label>
+                <input type="text" class="form-control" id="nameInputBox" placeholder="Ваше имя" required>
+              </div>
+              <div class="form-group container__form_phoneblock">
+                <label for="phoneInputBox"></label>
+                <input type="tel" class="form-control" id="phoneInputBox" placeholder="Ваш телефон*" required>
+              </div>
+              <div class="form-group container__form_email">
+                <label for="emailInputBox"></label>
+                <input type="email" class="form-control" id="emailInputBox" aria-describedby="emailHelp"
+                  placeholder="Ваш email" required>
+              </div>
+              <div class="form-group container__form_country">
+                <label for="countryInputBox"></label>
+                <input type="text" class="form-control" id="countryInputBox" placeholder="Страна" required>
+              </div>
+              <button type="submit" class="btn btn-danger p-3 pl-5 pr-5 container__form_button">Отправить</button>
+            </form>
+
+            <div class="col-lg-12 d-flex justify-content-center align-items-center container__form_confidenttext">
+              <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+              <p>Абсолютная конфиденциальность ваших контактных данных
+                гарантирована</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row visa-block">
+        <h2 class="h2" id="chapter3">Оформляйте визу через нас!</h2>
+        <div class="col-lg-12 d-flex justify-content-around visa-block__conditions">
+          <div class="col-lg-3 visa-block__conditions_box">
+            <figure>
+              <img class="visa-block__conditions_image" src="images/p1.png" alt="картинки нет">
+              <p class="visa-block__conditions_text">Без авиабилетов, без справок о доходах</p>
+            </figure>
+          </div>
+          <div class="col-lg-3 visa-block__conditions_box">
+            <figure>
+              <img class="visa-block__conditions_image" src="images/p2.png" alt="картинки нет">
+              <p class="visa-block__conditions_text">После отказа в визе</p>
+            </figure>
+          </div>
+          <div class="col-lg-3 visa-block__conditions_box">
+            <figure>
+              <img class="visa-block__conditions_image" src="images/p3.png" alt="картинки нет">
+              <p class="visa-block__conditions_text">Без доп. сборов</p>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="row country-list">
+        <h2 class="h2" id="chapter2">Список стран</h2>
+        <div class="col-lg-12 d-flex flex-wrap justify-content-between country-list__images">
+          <div class="col-lg-4 p-3 country-list__images_box">
+            <a href="#">
+              <div class="box-country-visa">
+                <span class="country-list__flag india-flag"></span></br>
+                <span class="country-list__country-title">Индия</span></br>
+                <span class="country-list__visa-text">Однократная/мультивиза 3-6 месяцев, оформление 5 рабочих дней</br></br></span>
+                <span class="country-list__visa-price">От 5000 р.</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 p-3 country-list__images_box">
+            <a href="#">
+              <div class="box-country-visa">
+                <span class="country-list__flag spain-flag"></span></br>
+                <span class="country-list__country-title">Испания</span></br>
+                <span class="country-list__visa-text">мультивиза на 6 месяцев, оформление 5 рабочих дней</br>&ensp;</span></br>
+                <span class="country-list__visa-price">От 5000 р.</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 p-3 country-list__images_box">
+            <a href="#">
+              <div class="box-country-visa">
+                <span class="country-list__flag italy-flag"></span></br>
+                <span class="country-list__country-title">Италия</span></br>
+                <span class="country-list__visa-text">мультивиза на 1 месяц - 5 лет, оформление 5 рабочих
+                  дней</br>&ensp;</span></br>
+                <span class="country-list__visa-price">От 5000 р.</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 p-3 country-list__images_box">
+            <a href="#">
+              <div class="box-country-visa">
+                <span class="country-list__flag greece-flag"></span></br>
+                <span class="country-list__country-title">Греция</span></br>
+                <span class="country-list__visa-text">мультивиза на 1 месяц - 5 лет, оформление 5 рабочих дней</br></br></span>
+                <span class="country-list__visa-price">От 5000 р.</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 p-3 country-list__images_box">
+            <a href="#">
+              <div class="box-country-visa">
+                <span class="country-list__flag bulgaria-flag"></span></br>
+                <span class="country-list__country-title">Болгария</span></br>
+                <span class="country-list__visa-text">мультивиза на 1 месяц - 5 лет, оформление 5 рабочих дней</br></br></span>
+                <span class="country-list__visa-price">От 5000 р.</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 p-3 country-list__images_box">
+            <a href="#">
+              <div class="box-country-visa">
+                <span class="country-list__flag france-flag"></span></br>
+                <span class="country-list__country-title">Франция</span></br>
+                <span class="country-list__visa-text">мультивиза на 1 месяц - 5 лет, оформление 4-5 рабочих
+                  дней</br>&ensp;</span></br>
+                <span class="country-list__visa-price">От 8000 р.</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 p-3 country-list__images_box-add1">
+            <a href="#">
+              <div class="box-country-visa">
+                <span class="country-list__flag germany-flag"></span></br>
+                <span class="country-list__country-title">Германия</span></br>
+                <span class="country-list__visa-text">10 рабочих дней</br></br></span></br>
+                <span class="country-list__visa-price">От 11000 р.</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 p-3 country-list__images_box-add1">
+            <a href="#">
+              <div class="box-country-visa">
+                <span class="country-list__flag cheh-flag"></span></br>
+                <span class="country-list__country-title">Чехия</span></br>
+                <span class="country-list__visa-text">От 1 дня до 1 года, оформление 5-7 раб.
+                  дней</br>&ensp;</span></br>
+                <span class="country-list__visa-price">От 10000 р.</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 p-3 country-list__images_box-add1">
+            <a href="#">
+              <div class="box-country-visa">
+                <span class="country-list__flag finland-flag"></span></br>
+                <span class="country-list__country-title">Финляндия</span></br>
+                <span class="country-list__visa-text">От 1 дня до 1 года, оформление 5-7 раб.
+                  дней</br>&ensp;</span></br>
+                <span class="country-list__visa-price">От 9000 р.</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 p-3 country-list__images_box-add2">
+            <a href="#">
+              <div class="box-country-visa">
+                <span class="country-list__flag holland-flag"></span></br>
+                <span class="country-list__country-title">Нидерланды</span></br>
+                <span class="country-list__visa-text">мульти от 1 месяца, оформление 10-12 раб.
+                  дней</br>&ensp;</span></br>
+                <span class="country-list__visa-price">От 12000 р.</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 p-3 country-list__images_box-add2">
+            <a href="#">
+              <div class="box-country-visa">
+                <span class="country-list__flag britain-flag"></span></br>
+                <span class="country-list__country-title">В.Британия</span></br>
+                <span class="country-list__visa-text">10 рабочих дней, оформление 10-12 раб.дней</br>&ensp;</span></br>
+                <span class="country-list__visa-price">От 10000 р.</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 p-3 country-list__images_box-add2">
+            <a href="#">
+              <div class="box-country-visa">
+                <span class="country-list__flag japan-flag"></span></br>
+                <span class="country-list__country-title">Япония</span></br>
+                <span class="country-list__visa-text">12 рабочих дней, оформление 15 раб.дней</br></br></span></br>
+                <span class="country-list__visa-price">От 10000 р.</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 country-list__show-more">Показать еще
+          <!--<a class="country-list__show_btn" href="#">Показать еще</a>-->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row work-section">
+        <div class="col-lg-12 work-section__block">
+          <h2 class="h2">Работать с нами выгодно</h2>
+          <p class="text-center">Многолетний опыт и связи</p>
+        </div>
+        <div class="col-lg-12 d-flex justify-content-between work-section__movebars">
+          <div class="work-section__movebars_left">
+            <p>Действуем на рынке</p>
+            <p>8 лет</p>
+          </div>
+          <div class="work-section__pic">
+            <img class="image-animo" src="images/if-083.png" alt="картинки нет">
+          </div>
+          <div class="work-section__movebars_right">
+            <p>Зарубежных партнеров</p>
+            <p>более 210</p>
+          </div>
+        </div>
+
+        <div class="col-lg-5 work-section-list">
+          <div class="col-lg-2">
+            <img class="work-section-list__leftpic" src="images/photo-12.jpg" alt="картинки нет">
+          </div>
+          <ul class="list-group work-section-list__text">
+            <li class="list-group-item work-section-list__item1">
+              <p>Наши цены – доступны</p>
+            </li>
+            <li class="list-group-item work-section-list__item2">
+              <p class="work-section-list__text">Заключаем договоры на все виды услуг</p>
+            </li>
+            <li class="list-group-item work-section-list__item3">
+              <p class="work-section-list__text">Можем принять оплату по факту за гарантированные визы</p>
+            </li>
+            <li class="list-group-item work-section-list__item4">
+              <p class="work-section-list__text">Постоянным клиентам скидки</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row confidence">
+        <h2 class="h2">Почему вы можете нам доверять?</h2>
+        <div class="col-lg-12 d-flex justify-content-between confidence-reasons">
+          <div class="col-lg-2 confidence-reasons__box">
+            <div class="confidence-reasons__circle">15</div>
+            <p class="confidence-reasons__text">лет успешной работы</p>
+          </div>
+          <div class="col-lg-2 confidence-reasons__box">
+            <div class="confidence-reasons__circle">49</div>
+            <p class="confidence-reasons__text">оформляем визы в более 49 стран мира</p>
+          </div>
+          <div class="col-lg-2 confidence-reasons__box">
+            <div class="confidence-reasons__circle">280</div>
+            <p class="confidence-reasons__text">зарубежных партнеров</p>
+          </div>
+          <div class="col-lg-2 confidence-reasons__box">
+            <div class="confidence-reasons__circle">24</div>
+            <p class="confidence-reasons__text">срочная виза за 24 часа</p>
+          </div>
+          <div class="col-lg-2 confidence-reasons__box">
+            <div class="confidence-reasons__circle">90<span class="small-t">тыс.</span></div>
+            <p class="confidence-reasons__text">выданных виз</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row visa-order">
+        <div class="col-lg-12">
+          <h2 class="h2" id="chapter5">Чтобы оформить визу, необходимо</h2>
+          <div class="col-lg-12 visa-order__line">
+            <a href="#">&nbsp;Оставить заявку&nbsp;</a>
+            <span>, а Все остальное делаем мы!</span>
+          </div>
+        </div>
+        <div class="col-lg-10 visa-order__list">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <img class="visa-order__list_arrow" src="images/arrow-down-1.png" width="60" alt="картинки нет">
+              <div class="visa-order__list_symbol"><i class="fa fa-id-card-o fa-3x" aria-hidden="true"></i></div>
+              <div class="visa-order__list_number">
+                <div>1</div>
+              </div>
+              <p class="visa-order__list_text">Получаем ваш паспорт, фотографии, документы.<br>Вы привозите их в наш
+                офис
+                или предаете с курьером</p>
+            </li>
+            <li class="list-group-item">
+              <img class="visa-order__list_arrow" src="images/arrow-down-1.png" width="60" alt="картинки нет">
+              <div class="visa-order__list_symbol"><i class="fa fa-file-text-o fa-3x" aria-hidden="true"></i></div>
+              <div class="visa-order__list_number">
+                <div>2</div>
+              </div>
+              <p class="visa-order__list_text">Оформляем пакет документов</p>
+            </li>
+            <li class="list-group-item">
+              <img class="visa-order__list_arrow" src="images/arrow-down-1.png" width="60" alt="картинки нет">
+              <div class="visa-order__list_symbol"><i class="fa fa-flag fa-3x" aria-hidden="true"></i></div>
+              <div class="visa-order__list_number">
+                <div>3</div>
+              </div>
+              <p class="visa-order__list_text">Подаем его в консульство</br>нужной страны</p>
+            </li>
+            <li class="list-group-item">
+              <img class="visa-order__list_arrow" src="images/arrow-down-1.png" width="60" alt="картинки нет">
+              <div class="visa-order__list_symbol"><i class="fa fa-check-square-o fa-3x" aria-hidden="true"></i></div>
+              <div class="visa-order__list_number">
+                <div>4</div>
+              </div>
+              <p class="visa-order__list_text"><span class="visa-em">Виза оформлена!</span></br>Чемодан собран!</br>Вы
+                готовы к поездке!</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 visa-order__pic">
+          <img src="images/voyage_bag.jpg" alt="картинки нет">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row partners">
+        <div class="col-lg-12">
+          <h2 class="h2">Наши партнеры</h2>
+        </div>
+        <div class="container">
+          <div class="row partners__contnd">
+            <div class="col-lg-12 d-flex justify-content-between partners__list">
+              <div class="col-lg-2 partners__list-box">
+                <img class="partners-logo" src="images/p4.png" alt="картинки нет">
+              </div>
+              <div class="col-lg-2 partners__list-box">
+                <img class="partners-logo" src="images/lp-4.png" alt="картинки нет">
+              </div>
+              <div class="col-lg-2 partners__list-box">
+                <img class="partners-logo" src="images/p2.png" alt="картинки нет">
+              </div>
+              <div class="col-lg-2 partners__list-box">
+                <img class="partners-logo" src="images/p3.png" alt="картинки нет">
+              </div>
+              <div class="col-lg-2 partners__list-box">
+                <img class="partners-logo" src="images/p5.png" alt="картинки нет">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row helpline">
+        <div class="col-lg-12">
+          <h2 class="h2" id="chapter3">Мы помогаем</h2>
+          <p class="helpline__subheader">в оформлении виз всем!</p>
+        </div>
+        <div class="col-lg-12 d-flex justify-content-around helpline__list">
+          <div class="col-lg-3 helpline__list_box">
+            <img class="animated flip help-movie_1" src="images/p1.png" alt="картинки нет">
+            <p class="text-center">Туристическим</br>фирмам</p>
+          </div>
+          <div class="col-lg-3 helpline__list_box">
+            <img class="animated flip help-movie_2" src="images/p2.png" alt="картинки нет">
+            <p class="text-center">Компаниям</p>
+          </div>
+          <div class="col-lg-3 helpline__list_box">
+            <img class="animated flip help-movie_3" src="images/p3.png" alt="картинки нет">
+            <p class="text-center">Частным лицам</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row problemsolve">
+        <div class="col-lg-12 problemsolve__header">
+          <h2 id="chapter4" class="h2">Мы готовы решить</h2>
+          <p>любые ваши проблемы</p>
+        </div>
+        <div class="col-lg-12 d-flex justify-content-around problemsolve__list">
+          <div class="col-lg-3 problemsolve__list_box">
+            <img src="images/fork_1.png" alt="картинки нет">
+            <p class="text-center">вам уже отказывали</br>в получении визы?</p>
+          </div>
+          <div class="col-lg-3 problemsolve__list_box">
+            <img src="images/fork_1.png" alt="картинки нет">
+            <p class="text-center">у вас пока нет билета</br>на самолет за рубеж?</p>
+          </div>
+          <div class="col-lg-3 problemsolve__list_box">
+            <img src="images/fork_1.png" alt="картинки нет">
+            <p class="text-center">не можете предъявить</br>гостиничную бронь?</p>
+          </div>
+        </div>
+        <div class="col-lg-12 d-flex justify-content-center problemsolve__hope">
+          <div class="col-lg-4 problemsolve__calm">Не беда!</div>
+          <div class="col-lg-6 problemsolve__promise">Вы все равно получите визу в одну или несколько из 49 стран мира,
+            с которыми мы работаем</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row comfortable">
+        <img class="comfortable__pic" src="images/pic-46.png" height="450px" alt="картинки нет">
+        <h2 class="h2">С нами удобно работать!</h2>
+        <div class="col-lg-12 comfortable__list">
+          <ul class="list-group">
+            <li class="list-group-item comfortable__list_itemh"><i class="fa fa-comments-o fa-lg"
+                aria-hidden="true"></i>&nbsp;&nbsp;Вы не знаете, с чего начать?</li>
+            <li class="list-group-item comfortable__list_item">Мы даем квалифицированную консультацию
+              <ul class="list-group comfortable__list_internal">
+                <li class="list-group-item comfortable__list_item">О перечне документов</li>
+                <li class="list-group-item comfortable__list_item">Порядке подачи заявления и заполнения бумаг</li>
+                <li class="list-group-item comfortable__list_item">Предпочтительном поведении во время собеседования
+                </li>
+              </ul>
+            </li>
+            <li class="list-group-item comfortable__list_itemh item-t"><i class="fa fa-folder-open-o fa-lg"
+                aria-hidden="true"></i>&nbsp;&nbsp;Нет времени на сбор документов?
+              <ul class="list-group comfortable__list_internal">
+                <li class="list-group-item comfortable__list_item">Мы оказываем помощь в подготовке всех
+                  необходимых</br>документов и справок, запрашиваемых консульством</li>
+                <li class="list-group-item comfortable__list_item">Предоставляем услугу курьерской доставки по Москве
+                </li>
+              </ul>
+            </li>
+            <li class="list-group-item comfortable__list_itemh item-t"><i class="fa fa-pencil-square-o fa-lg"
+                aria-hidden="true"></i>&nbsp;&nbsp;Затрудняет процедура заполнения<br>визовой анкеты и иных бумаг</li>
+            <li class="list-group-item comfortable__list_item">Мы заполним их за вас абсолютно точно</li>
+            <li class="list-group-item comfortable__list_itemh item-t"><i class="fa fa-user-times fa-lg"
+                aria-hidden="true"></i>&nbsp;&nbsp;Существуют препятствия<br>для визита в консульство?</li>
+            <li class="list-group-item comfortable__list_item">Мы можем оформить визу и без вашего</br>личного
+              присутствия</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bottom-pic">
+      <!-- здесь фоновая картинка background-image: -->
+      <div class="container">
+        <div class="row w-50 container__form">
+          <div class="col-lg-10 container__form_stamptext">
+            <p class="p-2 text-center">Без хлопот</p>
+          </div>
+          <div class="col-lg-12 container__form_block">
+            <div class="container__form_boxorder">
+              <h3 class="h3" id="chapter7">Оставьте заявку</h3>
+              <p class="container__form_boxorder-text">на Бесплатную консультацию визового</br>эксперта</p>
+
+              <form>
+                <div class="form-group container__form_nameblock">
+                  <label for="nameInputBox"></label>
+                  <input type="text" class="form-control" id="nameInputBox" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group container__form_phoneblock">
+                  <label for="phoneInputBox"></label>
+                  <input type="text" class="form-control" id="phoneInputBox" placeholder="Ваш телефон*" required>
+                </div>
+                <div class="form-group container__form_email">
+                  <label for="emailInputBox"></label>
+                  <input type="email" class="form-control" id="emailInputBox" aria-describedby="emailHelp"
+                    placeholder="Ваш email" required>
+                </div>
+                <div class="form-group container__form_country">
+                  <label for="countryInputBox"></label>
+                  <input type="text" class="form-control" id="countryInputBox" placeholder="Страна" required>
+                </div>
+                <button type="submit" class="btn btn-danger p-3 container__form_button">Отправить</button>
+              </form>
+
+              <div class="col-lg-12 d-flex justify-content-center align-items-center container__form_confidenttext">
+                <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
+                <p>Абсолютная конфиденциальность ваших контактных данных
+                  гарантирована</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row bottom-stripe">
+        <div class="col-lg-12 bottom-stripe__header">
+          <h2 id="chapter6" class="h2">Остались вопросы?</h2>
+        </div>
+        <div class="col-lg-12 bottom-stripe__map clearfix">
+          <iframe class="bottom-stripe__map_iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.0561995925154!2d37.49326126483546!3d55.792262033603066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b549acaf083fa9%3A0xba5aa3bd5c1e6c88!2z0J7QutGC0Y_QsdGA0YzRgdC60L7QtSDQv9C-0LvQtQ!5e0!3m2!1sru!2sru!4v1530739077449"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
+          <div class="bottom-stripe__map_textbox" id="contacts">
+            <p class="text-center">Позвоните нам!</p>
+            <p class="text-center">+7 (495) 369-6960</p>
+            <p class="text-center">работаем с 10:00 до 21:00<br>без перерыва и выходных</p>
+            <p class="text-center">Наш офис находится в 2-х минутах<br>от м.Октябрьское поле</p>
+          </div>
+          <div class="bottom-stripe__map_promise-visa">
+            <p class="text-center">Звоните - Сделаем визу быстро!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-around align-items-center footer-stripe">
+        <div class="col-lg-2 footer-stripe__copyright">&copy; 2016 vvisa.ru</div>
+        <div class="col-lg-2 d-flex justify-content-center footer-stripe__payments">
+          <img src="https://cdn4.iconfinder.com/data/icons/simple-peyment-methods/512/visa-512.png" alt="card"></img>
+          <img src="https://cdn1.iconfinder.com/data/icons/picons-social/57/social_mastercard-512.png" alt="card"></img>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+</body>
+
+</html>

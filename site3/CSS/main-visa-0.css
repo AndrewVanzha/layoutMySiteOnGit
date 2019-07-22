@@ -1,0 +1,1141 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*--------------------------------------------------------*/
+/* Сетка */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* Clearfix */
+.group::before,
+.group::after {
+  content: "";
+  display: table;
+}
+.group::after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+/* ---------------------------------------------------------------------------- */
+/* задаю ширину и центрирую */
+.container {
+	margin: 0 auto;
+	width: 70%;
+/*	max-width: 1080px;*/
+}
+/* для отладки */
+p {
+	border: 1px dotted red;
+}
+/* Пользовательские стили */
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* заголовки */
+h1 {
+	font-style: normal;
+	font-weight: 900;
+	text-align: center;
+	font-size: 55px;
+	text-transform: uppercase;
+}
+h2 {
+	font-style: normal;
+	font-weight: 700;
+	text-align: center;
+	font-size: 45px;
+	padding-bottom: 25px;
+	border: 1px dashed DarkViolet;
+}
+h3 {
+	font-style: normal;
+	font-weight: 600;
+	text-align: center;
+	font-size: 37px;
+	text-transform: uppercase;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+/* три колонки в заголовке */
+.col-1-3 {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+}
+/* лэйба в заголовке */
+.label {
+/*  height: 200px;*/
+	width: 80%;
+	border-radius: 25%;
+/*	float: left;*/
+}
+/* вторая колонка */
+.time-table {
+	padding-left: 20px;
+	margin-top: 70px;
+}
+.time-table p {
+	margin-top: 10px;
+/*	padding-top: 20px;*/
+}
+.start_end {
+	font-size: 170%;
+}
+/* третья колонка с контактами */
+.contact {
+	text-align: center;
+	margin: 30px 0 50px 0;
+}
+.contact p {
+	margin-top: 10px;
+/*	padding-top: 20px;*/
+}
+.tel {
+	font-size: 200%;
+	padding-bottom: 8px;
+}
+.adr {
+	font-size: 85%;
+	letter-spacing: 90%;
+	color: #088;
+	padding-top: 10px;
+}
+/* Меню */
+.box-nav {		/* полоса */
+/*	min-width: 1380px;*/
+	width: 100%;
+	background: #cbe2c1;
+	background: -webkit-linear-gradient(to left, #a1d3b0, #f6f1d3);
+	background: -moz-linear-gradient(to left, #a1d3b0, #f6f1d3);
+	background: linear-gradient(to left, #a1d3b0, #f6f1d3);
+	padding: 15px 0 15px 0;
+	margin-bottom: 10px;
+}
+.nav-text {		/* все надписи */
+	font-size: 90%;
+	letter-spacing: 80%;
+	border: 1px dotted blue;
+}
+.menu-text {	/* все меню, кроме последней */
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	margin: 0 3px;
+	border: 1px dotted red;
+}
+.menu-text:hover {
+	color: MediumSlateBlue;
+}
+/* кнопка справа */
+.call-btn {
+	text-transform: uppercase;
+	cursor: pointer;
+	color: #fff;
+	margin-left: 50px;
+	padding: 15px 25px 15px 35px;
+	border: 5px solid #fff;
+	background: red;
+	text-decoration: none;
+	position: relative;
+	top: 5px;
+/*	right: 5px;*/
+}
+.call-btn:hover {
+	background: teal;
+}
+/* Подзаголовки с синим фоном */
+.blue-box-pic {
+/*	min-width: 1380px;*/
+	width: 100%;			/* ширина во весь экран */
+	margin-bottom: 30px;
+}
+.sea-pic {		/* фон - город у моря */
+/*	<img src="http://nesiditsa.ru/wp-content/uploads/2014/05/image00110.jpg" alt="Курорт">*/
+	height: 1030px;			/* высота картинки */
+	background-image: linear-gradient(to bottom right, white 0%, transparent 100%), url("http://nesiditsa.ru/wp-content/uploads/2014/05/image00110.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	-moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+/* Основной заголовок */
+.main_header {
+	padding-top: 60px;
+}
+/* Подзаголовки */
+.visa-1 {
+	font-style: normal;
+	font-weight: 500;
+	text-align: center;
+	font-size: 40px;
+	margin-top: 40px;
+}
+.visa-2 {
+	font-style: italic;
+	font-weight: 400;
+	text-align: center;
+	font-size: 30px;
+	margin: 30px 0;
+}
+/* Штемпель наискосок */
+.box-stamp {
+	color: red;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+/*	margin-right: auto;
+	margin-left: auto;*/
+	margin-left: 50%;		/* сдвиг левого края  на середину */
+	transform: rotate(15deg);
+	position: relative;
+	top: 60px;
+/*	z-index: 20;*/
+}
+.long-stamp {
+	width: 43%;				/* ширина штампа */
+}
+.stamp-text {
+	padding: 18px 0;
+	border: 2px solid red;
+	border-radius: 10px;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+/* Ящик с заявкой */
+.box-order {
+	width: 50%;			/* ширина ящика от ширины экрана */
+	margin: 0 auto;
+/*	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-right: auto;
+	margin-left: auto;*/
+	background-color: white;
+	background-color: rgba(255, 255, 255, .85);	/* сделал частично прозрачным весь ящик ввода */
+}
+.box-order-text {
+	font-size: 120%;
+	text-align: center;
+	padding: 1px 0;
+}
+.box-order-text2 {
+	font-size: 120%;
+	margin-left: 25%;
+	padding: 1px 0;
+}
+/* Поля ввода */
+input {
+	outline: none;	/* убрал подсвет рамки при фокусе */
+/*	border: none;*/	/* убрал рамку поля */
+	background: transparent;	/* сделал прозрачным поле ввода */
+	padding: 16px 0 16px 15px;	/* расширяет поля ввода */
+/*	color: #0ff;*/
+	font-size: 120%;	/* размеры текста ввода */
+}
+input:focus {
+	background-color: #00f;		/* меняю цвет при установке курсора */
+}
+input:hover {
+	background-color: fuchsia;	/* меняю цвет при наведении курсора */
+}
+.input-form {
+	background-color: white;
+	background-color: rgba(255, 255, 255, .85);	/* сделал частично прозрачным весь ящик ввода */
+}
+.input-data {
+	padding: 4px 0 4px 60px;	/* расстояние между полями ввода*/
+}
+.input-style1 {
+	width: 83%;			/* ширина поля ввода */
+	color: 0;
+	font-size: 120%;
+	border: none;	/* убрал рамку поля ввода */
+	border-bottom: 1px solid #555;
+}
+.input-style2 {
+	width: 83%;			/* ширина поля ввода */
+	color: 0;
+	font-size: 120%;
+	border: none;	/* убрал рамку поля ввода */
+/*	border-bottom: 1px solid #ccc;*/
+}
+/* Кнопка отправить */
+.input-data-btn {
+	background-color: red;
+	color: #fff;
+	font-size: 220%;
+	text-transform: uppercase;
+	padding: 17px 60px;
+	margin: 20px auto 20px auto;
+	border: 2px solid red;
+}
+.input-data-btn:hover {
+	background-color: #fff;
+	color: red;
+}
+/* Подвал ящика заказа */
+.box-order-footer {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	border: 1px dashed blue;
+	width: 80%;					/* ширина ящичка */
+	margin: 0 auto;
+}
+.lock {
+	height: 25px;
+	float: left;
+	position: relative;
+	top: 8px;
+}
+.box-order-footer-text {
+	text-align: left;
+	padding: 5px 30px;
+	color: #555;
+}
+/* Окна доп.условий */
+.dop-conditions-box {
+	height: 310px;		/* высота ящика ссылок для дополнительных условий */
+	border: 1px solid #ccc;
+	text-align: center;	/* центрирование картинок и текста */
+	padding-top: 20px;	/* отступ сверху для картинки */
+}
+figure {		/* отладка */
+	text-align: center;
+	border: 1px dashed OrangeRed;
+}
+.dop-text {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 110%;
+	line-height: 120%;
+	padding-top: 10px;
+}
+.image-parameters {
+	height: 200px;
+}
+.dop-shift1 {
+	height: 70px;		/* доп.сдвиг после темы */
+}
+/* Окна со странами - подписи */
+.link-visa {
+	text-decoration: none;
+}
+.box-country-visa {
+	height: 290px;		/* высота ящика ссылок для виз и стран */
+	border: 1px solid #ccc;
+	text-align: center;	/* центрирование картинок и текста */
+	padding-top: 25px;	/* отступ для картинки флага */
+}
+.link-visa div:hover {
+	background-color: #c0c0c0;
+}
+a:hover .country-title {	/* переключение цвета текста */
+	text-decoration: none;
+	color: #fff;
+}
+a:hover .visa-price {	/* переключение цвета текста */
+	text-decoration: none;
+	color: #000;
+}
+.country-title {
+	color: #00f;
+	text-transform: uppercase;
+	text-decoration: inherit;
+	font-style: normal;
+	font-size: 250%;
+	line-height: 70px;
+/*	padding-top: 10px;
+	padding-bottom: 20px;*/
+}
+.visa-text {
+	font-style: normal;
+	font-size: 100%;
+	color: black;
+	text-decoration: none;
+/*	padding-top: 10px;
+	padding-bottom: 20px;*/
+	text-transform: none;
+	line-height: 20px;
+}
+.flag {
+	background: url("../images/flags200.png") no-repeat;
+	width: 55px;
+	height: 55px;
+	display: inline-block;
+	border: 1px dashed OrangeRed;
+/*	padding: 10px 0;*/
+}
+.visa-price {
+	font-style: normal;
+	font-size: 200%;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-decoration: none;
+	color: red;
+	line-height: 70px;
+/*	padding-top: 20px;
+	padding-bottom: 20px;*/
+}
+.country-box {
+	height: 230px;
+}
+.india-flag {
+	background-position: -132px -528px;
+}
+.spain-flag {
+	background-position: -1028px -266px;
+}
+.italy-flag {
+	background-position: -452px -528px;
+}
+.greece-flag {
+	background-position: -196px -440px;
+}
+.bulgaria-flag {
+	background-position: -708px -92px;
+}
+.france-flag {
+	background-position: -388px -353px;
+}
+.btn-more {				/* кнопка Показать еще */
+/*	border: 1px dotted blue;*/
+	margin: 10px auto 70px auto;
+	width: 19%;
+}
+.btn-more-text {
+	text-align: center;
+	text-decoration: none;
+	font-style: normal;
+	font-size: 110%;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: black;
+	padding: 5px 20px;
+	border: 1px solid #000;
+	color: black;
+	background-color: white;
+}
+.btn-more-text:hover {
+	color: white;
+	background-color: black;
+}
+/* анимация с заголовками */
+.dop-market {			/* подзаголовок */
+	text-align: center;
+	text-decoration: none;
+	font-style: normal;
+	font-size: 200%;
+	color: black;
+	padding: 10px 0;
+	margin-bottom: 40px;
+}
+.animated {
+	-webkit-animation-duration: 6s;
+	animation-duration: 6s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.animated.infinite {
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+@-webkit-keyframes fadeInLeft {		/* слева */
+	from {
+		opacity: 0;
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+	to {
+		opacity: 1;		/* полная непрозрачность */
+		-webkit-transform: translateX(-12%);
+		transform: translateX(-12%);
+	}
+}
+@keyframes fadeInLeft {
+	from {
+		opacity: 0;
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translateX(-12%);
+		transform: translateX(-12%);
+	}
+}
+.fadeInLeft {
+	-webkit-animation-name: fadeInLeft;
+	animation-name: fadeInLeft;
+}
+@-webkit-keyframes fadeInRight {		/* справа */
+	from {
+		opacity: 0;
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translateX(12%);
+		transform: translateX(12%);
+	}
+}
+@keyframes fadeInRight {
+	from {
+		opacity: 0;
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translateX(12%);
+		transform: translateX(12%);
+	}
+}
+.fadeInRight {
+	-webkit-animation-name: fadeInRight;
+	animation-name: fadeInRight;
+}
+.move-bar-left {
+	height: 150px;
+	width: 45%;
+	background-color: SkyBlue;
+	border-radius: 0 80px 80px 0;
+	float: left;
+}
+.move-bar-right {
+	height: 150px;
+	width: 45%;
+	background-color: LightSalmon;
+	border-radius: 80px 0 0 80px;
+	float: right;
+}
+.text-animo-1 {		/* тексты в двигающихся барах */
+	color: #fff;
+	font-size: 180%;
+	padding-top: 15px;
+	padding-bottom: 9px;
+}
+.text-animo-2 {
+	color: #fff;
+	font-weight: 800;
+	font-size: 350%;
+	padding-top: 9px;
+}
+.left-bar-text {
+	padding-left: 43%;
+}
+.right-bar-text {
+	padding-left: 6%;
+}
+.image-animo {
+/*	height: 180px;*/
+	padding-top: 10px;
+	margin-bottom: 40px;
+}
+/* картинка слева */
+.pic-left {
+	float: left;
+	width: 300px;			/* ширина картинки */
+	height: 600px;
+	margin-top: 180px;
+/*	background-image: url("../images/photo-14.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}
+/* список с картинками */
+.list-par li {
+	font-size: 200%;
+	margin: 55px 20%;
+}
+.list-pic1 {
+	background: url("../images/p3.png") no-repeat;
+	list-style-type: none;
+/*	width: 55px;
+	height: 55px;*/
+	border: 1px dashed OrangeRed;
+	padding: 40px 0 40px 120px;
+}
+.list-pic2 {
+	background: url("../images/lp-2.png") no-repeat;
+	list-style-type: none;
+/*	width: 55px;
+	height: 55px;*/
+	border: 1px dashed OrangeRed;
+	padding: 40px 0 40px 120px;
+}
+.list-pic3 {
+	background: url("../images/lp-3.png") no-repeat;
+	list-style-type: none;
+/*	width: 55px;
+	height: 55px;*/
+	border: 1px dashed OrangeRed;
+	padding: 40px 0 40px 120px;
+}
+.list-pic4 {
+	background: url("../images/lp-4.png") no-repeat;
+	list-style-type: none;
+/*	width: 55px;
+	height: 55px;*/
+	border: 1px dashed OrangeRed;
+	padding: 40px 0 40px 120px;
+}
+/* раздел доверия */
+.col-1-5 {
+	margin-top: 10px;
+	margin-bottom: 70px;
+	display: inline-block;
+	width: 17%;
+	vertical-align: top;
+}
+.col-1-5-first {
+	margin-left: 0;
+	margin-right: 15px;
+}
+.col-1-5-middle {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.col-1-5-last {
+	margin-left: 15px;
+	margin-right: 0;
+}
+.confidence-box {
+	height: 250px;		/* высота ящика для темы */
+	border: 1px dotted Goldenrod;
+	text-align: center;	/* центрирование картинок и текста */
+	padding-top: 10px;	/* отступ сверху для картинки */
+}
+.confidence-circle {
+	margin: 0 auto;			/* центровка картинки div */
+	width: 110px;
+	height: 110px;
+	border: 2px solid red;
+	border-radius: 50%;
+	padding-top: 30px;		/* центровка текста по вертикали */
+	color: red;
+	font-size: 250%;
+	font-weight: 900;
+}
+.confidence-text {
+	color: #Grey;
+	font-size: 120%;
+	padding-top: 20px;
+}
+.small-t {
+	font-size: 40%;
+}
+/* тема заказа оформления визы */
+.order-line {
+	border: 1px dotted Goldenrod;
+	text-align: center;	/* центрирование картинок и текста */
+/*	width: 310px;*/
+	height: 80px;
+/*	padding-bottom: 30px;*/
+}
+.make-order {
+	text-decoration: none;
+	font-size: 180%;
+	background: red;
+	color: #fff;
+	text-transform: uppercase;
+	transition-property: background;
+	transition-duration: 2.1s;
+}
+.make-order:hover {
+	background: MediumAquamarine;
+}
+.order-adv {
+	font-size: 180%;
+}
+/* список с серыми барами, картинками и делами */
+.action-list {
+	font-size: 160%;
+	color: #222;
+}
+.action-list-2 {
+	margin: 10px 0;
+	text-align: left;
+	background: LightGray;
+	border: 1px dashed OrangeRed;
+	padding: 10px 0 10px 15px;
+}
+.obj-arrow {
+	display: inline-block;
+	width: 7%;
+/*	padding-top: 30px;*/
+	position: relative;
+	bottom: -50px;			/* сдвинуть стрелку вниз */
+/*	vertical-align: top;*/
+}
+.obj-pic {
+	display: inline-block;
+	width: 6%;
+/*	padding-top: 15px;*/
+	vertical-align: top;
+}
+.action-3 {
+	display: inline-block;
+	width: 9%;
+	vertical-align: top;
+}
+.action-4 {
+	display: inline-block;
+	width: 77%;
+	vertical-align: top;
+}
+.arrow-par {
+	border: 1px dashed OrangeRed;
+	height: 75px;
+	width: 60px;
+}
+.pic-par {
+	border: 1px dashed OrangeRed;
+	height: 40px;
+	width: 50px;
+/*	vertical-align: top;*/
+}
+.num-sel {
+	margin: 0 auto;			/* центровка картинки div */
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	padding-left: 8px;
+	padding-top: 2px;
+	background: red;
+	color: #fff;
+}
+.visa-em {
+	font-weight: 900;
+}
+/* рисунок справа - НЕ ПОШЕЛ */
+.pattern-right {
+	height: 1px;			/* высота картинки - фактически, расстояние до следующей темы */
+	width: 25%;
+/*	background-image: url("../images/on_bags.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;*/
+	-moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+	position: relative;
+	left: 75%;
+	bottom: 360px;			/* сдвиг картинки вверх */
+}
+.pattern-right-par {
+	height: 100%;
+	width: 100%;			/* ширина картинки в окне div */
+	background: transparent;	/* ? */
+}
+/* тема с партнерами: фон - синий прямоугольник */
+.blue-bar {
+	height: 350px;			/* высота картинки */
+	background: MediumAquamarine;
+	-moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+.partners-header {
+	color: #fff;
+}
+.partners-cell {
+	width: 17%;
+	margin: 0 10px;
+	display: inline-block;
+}
+.partners-logo {
+	height: 190px;
+}
+/* тема - Мы помогаем */
+.help-subheader {
+	border: 1px dotted Goldenrod;
+	text-align: center;	/* центрирование картинок и текста */
+/*	width: 310px;*/
+	height: 80px;
+	font-size: 260%;
+	font-weight: 800;
+	color: #fff;
+}
+/* покручу картинки */
+.animated.flip {
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
+	-webkit-animation-name: flip;
+	animation-name: flip;
+
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.animated.flip.infinite {
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+.help-movie_1 {
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-delay: 3s;
+	animation-delay: 3s;
+}
+.help-movie_2 {
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-delay: 8s;
+	animation-delay: 8s;
+}
+.help-movie_3 {
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-delay: 13s;
+	animation-delay: 13s;
+}
+@-webkit-keyframes flip {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: cubic-bezier(1,.03,.73,.26);
+    animation-timing-function: cubic-bezier(1,.03,.73,.26);
+  }
+  40% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: cubic-bezier(1,.03,.73,.26);
+    animation-timing-function: cubic-bezier(1,.03,.73,.26);
+  }
+  50% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: cubic-bezier(1,.03,.73,.26);
+    animation-timing-function: cubic-bezier(1,.03,.73,.26);
+  }
+  80% {
+    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+    -webkit-animation-timing-function: cubic-bezier(1,.03,.73,.26);
+    animation-timing-function: cubic-bezier(1,.03,.73,.26);
+  }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    -webkit-animation-timing-function: cubic-bezier(1,.03,.73,.26);
+    animation-timing-function: cubic-bezier(1,.03,.73,.26);
+  }
+}
+@keyframes flip {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: cubic-bezier(1,.03,.73,.26);
+    animation-timing-function: cubic-bezier(1,.03,.73,.26);
+  }
+  40% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: cubic-bezier(1,.03,.73,.26);
+    animation-timing-function: cubic-bezier(1,.03,.73,.26);
+  }
+  50% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: cubic-bezier(1,.03,.73,.26);
+    animation-timing-function: cubic-bezier(1,.03,.73,.26);
+  }
+  80% {
+    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+    -webkit-animation-timing-function: cubic-bezier(1,.03,.73,.26);
+    animation-timing-function: cubic-bezier(1,.03,.73,.26);
+  }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    -webkit-animation-timing-function: cubic-bezier(1,.03,.73,.26);
+    animation-timing-function: cubic-bezier(1,.03,.73,.26);
+  }
+}
+/* Подзаголовки с красным фоном */
+.red-box-pic {
+/*	min-width: 1380px;*/
+	width: 100%;			/* ширина во весь экран */
+	margin-bottom: 30px;
+}
+.red-bar {
+	height: 550px;			/* высота картинки */
+	background: Salmon;
+	-moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+.dop-white-text {
+	text-align: center;
+	color: #fff;
+	text-transform: lowercase;
+	font-size: 150%;
+}
+/* подзаголовок "не беда"*/
+.support-style {
+	color: red;
+	font-size: 340%;
+	font-weight: 800;
+	text-transform: uppercase;
+	float: left;
+}
+.promis-49 {
+	padding-left: 320px;
+	font-size: 160%;
+}
+/* подзаголовок "удобно работать" */
+.uu1 {
+	display: inline-block;
+	width: 4%;
+	vertical-align: top;
+	border: 1px dashed OrangeRed;
+	margin-top: 15px;
+}
+.image-udobno {
+	border: 1px dashed green;
+	width: 92%;
+}
+.udobno {
+	font-size: 220%;
+	padding: 15px 0 5px 30px;
+	display: inline-block;
+}
+.text-udobno {
+	padding-left: 80px;
+	font-size: 130%;
+	list-style-type: disc;
+}
+.line-udobno {
+	margin: 15px 0;
+	border-bottom: 1px dashed #000;
+}
+.pic-right-1 {
+	height: 500px;			/* высота картинки */
+	position: relative;
+	top: -500px;			/* сдвинуть картинку вверх */
+	left: 1000px;
+/*	width: 300px;*/
+	float: left;
+}
+.tbrick {
+	height: 50px;
+	background-color: DimGray;
+}
+/* блок "оставить заявку/без хлопот" */
+.city-pic {		/* фон - город у моря */
+/*	<img src="http://nesiditsa.ru/wp-content/uploads/2014/05/image00110.jpg" alt="Курорт">*/
+	height: 780px;			/* высота картинки */
+	background-image: linear-gradient(to bottom right, white 0%, transparent 100%), url("http://nesiditsa.ru/wp-content/uploads/2014/05/image00110.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	-moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+.short-stamp {
+	width: 26%;				/* ширина штампа */
+}
+/* карта местоположения */
+.venue-map {
+	height: 500px;
+	width: 100%;
+    float: left;
+/*    display: inline-block;
+    position: relative;
+    top: -400px;
+    z-index: 30;*/
+}
+.city-map {		/* фон - карта города no */
+	height: 500px;			/* высота картинки */
+/*	background-image: linear-gradient(to bottom right, white 0%, transparent 100%), url("https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7230.261497543186!2d44.03002653868117!3d56.3202221066087!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1525335662552");*/
+    
+/*	background-image: url("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.0561995925154!2d37.49326126483546!3d55.792262033603066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b549acaf083fa9%3A0xba5aa3bd5c1e6c88!2z0J7QutGC0Y_QsdGA0YzRgdC60L7QtSDQv9C-0LvQtQ!5e0!3m2!1sru!2sru!4v1530739077449");*/
+    
+/*	background-image: url("http://nesiditsa.ru/wp-content/uploads/2014/05/image00110.jpg");*/
+    
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	-moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+/*    margin-top: 5px;*/
+}
+.box-on-map {/*no*/
+	height: 340px;
+	width: 500px;
+    margin-left: 150px;
+    margin-top: 30px;
+/*	position: relative;
+	top: -380px;	
+	left: 100px;*/
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 30px;
+    display: inline-block;
+    position: relative;
+    z-index: 50;
+}
+.text-loc {
+/*    display: inline-block;*/
+    position: relative;
+    top: 140px;
+    left: 100px;
+    width: 500px;
+    height: 360px;
+/*    margin-top: 50px;*/
+/*    padding-top: 10px;*/
+/*	padding-left: 30px;*/
+	text-align: center;
+	background-color: white;
+	background-color: rgba(255, 255, 255, .85);	/* сделал частично прозрачным весь ящик ввода */
+	border: 1px solid white;
+	border-radius: 30px;
+}
+.text-location {/*no*/
+/*    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 100px;*/
+	text-align: center;
+	padding-left: 30px;
+}
+.text-style-1 {
+	margin-top: 30px;		/* сдвиг для прорисовки закруглений углов */
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 220%;
+	font-weight: 800;
+    position: relative;
+    top: -450px;
+/*    float: left;*/
+}
+.text-style-2 {
+	padding-top: 15px;
+	padding-bottom: 10px;
+	font-size: 150%;
+	font-weight: 600;
+    position: relative;
+    top: -450px;
+}
+.text-style-3 {
+	padding-top: 15px;
+	padding-bottom: 3px;
+	font-size: 140%;
+/*	font-weight: 600;*/
+    position: relative;
+    top: -450px;
+}
+.text-style-4 {
+	padding-top: 3px;
+	padding-bottom: 10px;
+	font-size: 140%;
+/*	font-weight: 600;*/
+    position: relative;
+    top: -450px;
+}
+.call-visa {
+	height: 40px;
+	width: 600px;
+	background-color: IndianRed;
+	position: relative;
+	top: 80px;	/* влияет на запись "Звоните..." и красный бар */
+	left: 340px;
+/*	padding-left: 50px;*/
+}
+.text-call-visa {
+	text-align: center;
+/*	padding-top: 9px;*/
+	color: white;
+	font-size: 180%;
+    position: relative;
+    top: -135px;        /* запись двигать вверх-вниз */
+}
+/* Подвал с синим фоном */
+.footer-box {
+	width: 100%;			/* ширина во весь экран */
+/*	height: 150px;*/
+	position: relative;
+/*	top: -250px;		*/
+}
+.footer-bar {
+	background: SkyBlue;
+	-moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+.cpright {
+	color: #fff;
+	font-weight: 300;
+	padding-left: 17%;
+}
+.cards1 {
+	height: 70px;
+	padding-left: 39%;
+	padding-top: 12px;
+}
+.cards2 {
+	height: 70px;
+	padding-top: 8px;
+}

@@ -1,0 +1,165 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-stretch: normal;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: black;
+  background-color: white;
+  width: 1280px;
+  border: 1px dashed red;
+}
+
+.main-header {
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+  height: 100px;
+  border: 1px dashed red;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0;
+  width: 1200px;
+  /*  height: 243px;*/
+  border: 1px dashed blue;
+}
+
+.left-block {
+  height: 200px;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+  /*  display: inline-block;*/
+  background-color: cyan;
+  border: 1px dashed black;
+}
+
+.left-block>p {
+  margin: 0;
+  padding: 170px 10px 9px 10px;
+}
+
+.center-block {
+  height: 90px;
+  width: 258px;
+  margin: 0;
+  padding: 0;
+  /*  margin-right: 50px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: yellow;
+  outline: 1px dashed black;
+}
+
+.center-block>h3 {
+  margin: 0;
+  padding: 0;
+  height: 16px;
+  width: 258px;
+  color: black;
+  background-color: rgb(207, 207, 164);
+}
+
+.block-1,
+.block-2 {
+  margin: 0;
+  margin-top: 17px;
+  padding: 0;
+  height: 12px;
+  width: 110px;
+  color: black;
+  background-color: rgb(207, 207, 164);
+}
+
+.block-3,
+.block-4 {
+  margin: 0;
+  margin-top: 18px;
+  padding: 0;
+  height: 27px;
+  width: 110px;
+  color: black;
+  background-color: rgb(207, 207, 164);
+}
+
+.block-2,
+.block-4 {
+  margin-left: 6px;
+  width: 142px;
+}
+
+/*
+.block-1 > p,
+.block-2 > p {
+  margin: 0;
+  margin-top: 56px;
+  padding: 5px 0 5px 10px;
+  color: rgb(91, 216, 210);
+  background-color: rgb(114, 114, 78);
+  display: block;
+}
+
+.block-1 > a,
+.block-2 > a {
+  margin: 0;
+  margin-top: 55px;
+  padding: 9px 0 10px 10px;
+  color: rgb(54, 167, 187);
+  background-color: rgb(139, 139, 13);
+  display: block;
+  text-align: center;
+}
+*/
+.right-block {
+  height: 200px;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  /*  display: inline-block;*/
+  background-color: lightblue;
+  border: 1px dashed black;
+}
+
+.tail-t1,
+.tail-t2 {
+  margin: 0;
+  padding: 10px 0px 10px 0px;
+  text-align: right;
+  color: white;
+  background-color: rgb(75, 139, 120);
+}
+
+.tail-t2 {
+  margin-top: 125px;
+}
+
+.after-blocks {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.date-in-field {
+  height: 30px;
+  width: 500px;
+}
+
+.footer-copyright b {
+  text-align: center;
+  color: #000;
+}
+
+.footer-copyright a {
+  text-decoration: none;
+  color: #000;
+}

@@ -1,0 +1,159 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*--------------------------------------------------------*/
+/* Сетка */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* Clearfix */
+.group::before,
+.group::after {
+  content: "";
+  display: table;
+}
+.group::after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+/* delo */
+table {
+/*  border-collapse: collapse;*/
+  border-collapse: separate;
+  border-spacing: 0;
+/*  border-spacing: 3px 5px;*/
+  margin-left: 5px;
+  color: #4a4a4d;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  width: 980px;
+}
+thead {
+  background: #395870;
+  background: linear-gradient(#49708f, #293f50);
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+th:first-child {
+  text-align: left;
+  border-top-left-radius: 5px;
+}
+th:last-child {
+  border-top-right-radius: 5px;
+}
+tbody tr:nth-child(even) {
+  background: #f0f0f2;
+}
+th,
+td {
+  padding: 15px 20px;
+  vertical-align: middle;
+}
+/*th,*/
+td {
+/*  border: 1px solid blue;*/
+  border-bottom: 1px solid #cecfd5;
+  border-right: 1px solid #cecfd5;
+}
+td:first-child {
+  border-left: 1px solid #cecfd5;
+}
+strong {
+  font-style: italic;
+  font-weight: bold;
+}
+.book-title {
+  color: #395870;
+  display: block;
+}
+.text-offset {
+  color: #7c7c80;
+  font-size: 12px;
+}
+.item-stock,
+.item-qty {
+  text-align: center;
+}
+.item-price {
+  text-align: right;
+}
+.item-multiple {
+  display: block;
+}
+tfoot {
+  text-align: right;
+}
+tfoot tr:last-child td {
+/*  border-bottom: 0;*/
+  background: #f0f0f2;
+  color: #395870;
+  font-weight: bold;
+}
+
+div {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+}
+.offset {
+  left: 20px;
+  position: relative;
+  top: 20px;
+  background-color: #999;
+}
+.boxx {
+  border: 1px dotted #000;
+}

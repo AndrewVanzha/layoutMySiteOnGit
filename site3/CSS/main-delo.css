@@ -1,0 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*--------------------------------------------------------*/
+/* Сетка */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* Clearfix */
+.group::before,
+.group::after {
+  content: "";
+  display: table;
+}
+.group::after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+/* delo */
+section {
+/*  float: left;*/
+  display: inline-block;
+/*  margin: 0 1.5%;*/
+  margin: 0;
+/*  padding-left: 30px;
+  padding-right: 30px;*/
+  width: 22%;
+}
+/* Типографика */
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+  border: 1px dotted #000;
+}
+.mm {
+  margin-bottom: 5px;
+}
+div {
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
+}
+.offset {
+  left: 20px;
+  position: relative;
+  top: 20px;
+  background-color: #999;
+}
+.boxx {
+  border: 1px dotted #000;
+}
+/*---------------------------------------------------------------*/
+.btn {
+    display: block;
+    width: 260px;
+    margin: 20px auto;
+    padding: 12px;
+    color: white;
+    background: #34495e;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-add {
+    background: #27ae60;
+}
+
+.btn-remove {
+    background: #c0392b;
+}
+
+.icon {
+    display: inline-block;
+    width: 45px;
+    height: 35px;
+    margin: 0 5px;
+    vertical-align: bottom;
+    background: url("/images/64px-flags.png") no-repeat;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+.icon-add {
+	background-position: -24px -24px;
+}
+
+.icon-edit {
+	background-position: -24px -24px;
+}
+
+.icon-remove {
+	background-position: -24px -24px;
+}
+
+.full-sprite {
+    height: 200px;
+    margin: 50px auto;
+    background: #34495e url("/images/64px-flags.png") no-repeat 50% 50%;
+    border-radius: 5px;
+}
+/*-------------------------------------------------------------------*/
+a span {
+    background: url("../images/flags64.png") no-repeat;
+/*    background: url("../images/icons.png") no-repeat;*/
+    display: inline-block;
+    height: 57px;
+    width: 57px;
+}
+.span-pos1 {
+    background-position: -24px -24px;
+/*    background-position: 0 -59px;*/
+}
+.span-pos2 {
+    background-position: -118px -59px;
+}

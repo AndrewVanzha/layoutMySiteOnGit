@@ -1,0 +1,1248 @@
+/*@import url(http://allfont.ru/allfont.css?fonts=arial-narrow);*/
+/*@font-face {
+  font-family: 'Arial Narrow';
+  src: url('fonts/arial-narrow_[allfont.ru].ttf');
+}*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, serif;
+  font-size: 16px;
+  /*overflow: hidden;*/
+  /*overflow-y: scroll;*/
+}
+
+*:hover,
+*:focus {
+  transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+/* header section */
+.header-block {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.header-block__brand-pic {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 16px;
+  border: 1px solid transparent;
+  border-radius: 18px;
+}
+
+.header-block__timetable p,
+.header-block__contactinfo p {
+  margin: 0;
+  text-align: center;
+}
+
+.header-block__timetable_working {
+  font-size: 16px;
+}
+
+.header-block__timetable_hours {
+  font-size: 24px;
+}
+
+.header-block__contactinfo {
+  position: relative;
+}
+
+.header-block__contactinfo a:nth-child(1) {
+  font-size: 30px;
+}
+
+.header-block__contactinfo a {
+  display: block;
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.header-block__contactinfo a:nth-child(2) {
+  text-decoration: underline;
+  color: #066cd3;
+}
+
+.header-block__contactinfo a:nth-child(3) {
+  margin-top: 15px;
+  text-decoration: none;
+  color: #066cd3;
+}
+
+.header-block__contactinfo a:nth-child(4) {
+  text-decoration: none;
+  color: #066cd3;
+}
+
+.header-nav {
+  position: absolute;
+  height: 1050px;
+  /*	<img src="http://nesiditsa.ru/wp-content/uploads/2014/05/image00110.jpg" alt="Курорт">*/
+  background-image: linear-gradient(to bottom right, white 0%, transparent 100%), url("http://nesiditsa.ru/wp-content/uploads/2014/05/image00110.jpg");
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+  background-position: center;
+  -moz-background-size: 100%;
+  /* Firefox 3.6+ */
+  -webkit-background-size: 100%;
+  /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%;
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.header-nav__navbar {
+  opacity: 0.7;
+  /*outline: 1px solid darkgreen;*/
+}
+
+.header-nav__navbar a {
+  font-family: 'Oswald', arial;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.header-nav__navbar li a:hover {
+  color: navy !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 1);
+}
+
+.header-nav__navbar_btn-button {
+  position: absolute;
+  z-index: 10;
+  top: 130px;
+  left: 45px;
+  display: block;
+  padding: 10px 0;
+  background-color: rgb(255, 44, 74, 1);
+  color: rgb(255, 255, 255);
+  font-family: 'Oswald', arial;
+  font-size: 16px;
+  text-transform: uppercase;
+  box-shadow: 0 0 0 6px rgb(240, 234, 234);
+}
+
+/* main section */
+/* "Сделаем визу быстро" */
+.container__anno {
+  position: relative;
+  top: 150px;
+}
+
+.container__mainheader {
+  margin: 0 auto;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 54px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.container__visa1 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+}
+
+.container__visa2 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 29px;
+  font-style: italic;
+}
+
+/* "Оставьте заявку" */
+.container__form {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  top: 250px;
+}
+
+.container__form_stamptext {
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(255, 44, 74);
+  font-size: 30px;
+  text-transform: uppercase;
+  border: 2px solid rgb(255, 44, 74);
+  border-radius: 10px;
+  position: absolute;
+  top: -20px;
+  left: 300px;
+  z-index: 10;
+  transform: rotate(15deg);
+}
+
+.container__form_stamptext p {
+  margin: 0;
+}
+
+.container__form_block {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 5;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.container__form_block h3 {
+  margin-top: 40px;
+  line-height: 1;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container__form_boxorder {
+  margin: 0 auto;
+  text-align: center;
+  width: 370px;
+}
+
+.container__form_boxorder h3 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.container__form_text {
+  margin: 20px auto 10px auto;
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.container__form_boxorder input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+
+.form-control:focus {
+  background-color: rgb(210, 217, 241);
+  outline: none;
+}
+
+.form-control:hover {
+  background-color: rgb(255, 216, 143);
+  outline: none;
+}
+
+.container__form_nameblock {
+  margin: 0 auto;
+}
+
+.container__form_phoneblock {
+  margin: 0 auto;
+}
+
+.container__form_email {
+  margin: 0 auto;
+}
+
+.container__form_country {
+  margin: 0px auto 10px auto;
+}
+
+.container__form_button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Oswald', arial;
+  font-size: 32px;
+  text-transform: uppercase;
+  background-color: rgb(255, 44, 74);
+  border: 2px solid transparent;
+}
+
+.container__form_button:hover {
+  border: 2px solid rgb(255, 44, 74);
+  color: rgb(255, 44, 74);
+  background-color: rgb(255, 255, 255);
+}
+
+.container__form_confidenttext p {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.1;
+  color: rgb(108, 108, 108);
+}
+
+.container__form_confidenttext i {
+  margin-right: 8px;
+}
+
+/* "Оформляйте визу через нас!" */
+.visa-block {
+  margin-top: 350px;
+}
+
+.visa-block h2 {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.visa-block__conditions {
+  margin-top: 10px;
+}
+
+.visa-block__conditions_box {
+  display: none;
+  border: 1px solid rgb(209, 209, 209);
+}
+
+.visa-block__conditions_image {
+  display: block;
+  width: 252px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.visa-block__conditions_text {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* "Список стран" */
+.country-list {
+  margin-top: 70px;
+}
+
+.country-list h2 {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.country-list__images {
+  margin-top: 40px;
+}
+
+.country-list__images_box,
+.country-list__images_box-add1,
+.country-list__images_box-add2 {
+  background-color: rgb(255, 255, 255);
+}
+
+.country-list__images_box a,
+.country-list__images_box-add1 a,
+.country-list__images_box-add2 a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.country-list__images_box-add1,
+.country-list__images_box-add2 {
+  display: none;
+}
+
+.box-country-visa {
+  height: 290px;
+  border: 2px solid rgb(121, 189, 190);
+  text-align: center;
+  padding-top: 25px;
+}
+
+.box-country-visa:hover {
+  background-color: rgb(121, 189, 190);
+}
+
+.box-country-visa:hover .country-list__country-title {
+  text-decoration: none;
+  color: #fff;
+}
+
+.box-country-visa:hover .country-list__visa-price {
+  text-decoration: none;
+  color: #000;
+}
+
+.country-list__country-title {
+  color: rgb(61, 180, 178);
+  text-transform: uppercase;
+  text-decoration: inherit;
+  font-style: normal;
+  font-size: 250%;
+  line-height: 70px;
+}
+
+.country-list__visa-text {
+  font-style: normal;
+  font-size: 100%;
+  color: black;
+  text-decoration: none;
+  text-transform: none;
+  line-height: 20px;
+}
+
+.country-list__flag {
+  background: url("../images/flags200.png") no-repeat;
+  width: 55px;
+  height: 55px;
+  display: inline-block;
+  /*border: 1px dashed OrangeRed;*/
+}
+
+.country-list__visa-price {
+  font-style: normal;
+  font-size: 200%;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  color: red;
+  line-height: 70px;
+}
+
+.country-box {
+  height: 230px;
+}
+
+.india-flag {
+  background-position: -132px -528px;
+}
+
+.spain-flag {
+  background-position: -1028px -266px;
+}
+
+.italy-flag {
+  background-position: -452px -528px;
+}
+
+.greece-flag {
+  background-position: -196px -440px;
+}
+
+.bulgaria-flag {
+  background-position: -708px -92px;
+}
+
+.france-flag {
+  background-position: -388px -353px;
+}
+
+.germany-flag {
+  background-position: -324px -265px;
+}
+
+.cheh-flag {
+  background-position: -260px -265px;
+}
+
+.finland-flag {
+  background-position: -68px -353px;
+}
+
+.holland-flag {
+  background-position: -388px -353px;
+}
+
+.britain-flag {
+  background-position: -516px -353px;
+}
+
+.japan-flag {
+  background-position: -708px -528px;
+}
+
+.country-list__show-more {
+  margin: 10px auto 70px auto;
+  cursor: pointer;
+  text-align: center;
+  font-style: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #000;
+}
+
+.country-list__show-more:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+.work-section__block h2 {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* "Работать с нами выгодно" */
+.work-section {
+  margin-top: 55px;
+  /*outline: 1px solid darkcyan;*/
+}
+
+.work-section__block {}
+
+.work-section__block h2 {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.work-section__block p {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.work-section__movebars {
+  margin: 40px auto 0 auto;
+}
+
+.work-section__movebars_left {
+  position: relative;
+  top: 0;
+  height: 160px;
+  background-color: rgb(121, 189, 190);
+  color: #fff;
+  border: 1px solid rgb(121, 189, 190);
+  border-radius: 0 100px 100px 0;
+}
+
+.work-section__movebars_left p:first-child {
+  margin: 0;
+  margin-top: 23px;
+  padding-right: 100px;
+  font-size: 27px;
+  font-weight: normal;
+  text-align: right;
+}
+
+.work-section__movebars_left p:last-child {
+  margin: 0;
+  margin-top: 3px;
+  padding-right: 180px;
+  font-size: 63px;
+  font-weight: 900;
+  text-align: right;
+}
+
+.work-section__pic {
+  padding: 15px 5px;
+}
+
+.work-section__movebars_right {
+  position: relative;
+  width: 500px;
+  height: 160px;
+  background-color: rgb(255, 44, 74);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 44, 74);
+  border-radius: 100px 0 0 100px;
+}
+
+.work-section__movebars_right p:first-child {
+  margin: 0;
+  margin-top: 23px;
+  padding-left: 50px;
+  font-size: 27px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.work-section__movebars_right p:last-child {
+  margin: 0;
+  margin-top: 3px;
+  padding-left: 50px;
+  font-size: 63px;
+  font-weight: 900;
+  text-align: left;
+}
+
+.work-section-list {
+  padding: 0;
+  margin: 60px auto 0 auto;
+  text-align: center;
+  height: 750px;
+}
+
+.work-section-list__leftpic {
+  position: absolute;
+  top: 100px;
+  left: -320px;
+}
+
+.work-section-list__text {
+  list-style: none;
+}
+
+.work-section-list__text p {
+  padding: 45px 5px;
+  margin: 0;
+  margin-left: 95px;
+  font-size: 32px;
+  text-align: left;
+}
+
+.work-section-list__text li {
+  position: relative;
+  margin: 0;
+  padding-left: 40px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+
+.work-section-list__item1 {
+  display: none;
+  background: url("../images/p3.png") no-repeat;
+}
+
+.work-section-list__item2 {
+  display: none;
+  background: url("../images/lp-2.png") no-repeat;
+}
+
+.work-section-list__item3 {
+  display: none;
+  background: url("../images/lp-3.png") no-repeat;
+}
+
+.work-section-list__item4 {
+  display: none;
+  background: url("../images/lp-4.png") no-repeat;
+}
+
+.confidence {
+  padding: 0;
+  margin: 95px auto 0 auto;
+  text-align: center;
+}
+
+.confidence h2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 850px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.confidence-reasons {
+  margin-top: 20px;
+}
+
+.confidence-reasons__box {
+  height: 250px;
+  /*border: 1px dotted Goldenrod;*/
+  text-align: center;
+  padding-top: 10px;
+}
+
+.confidence-reasons__circle {
+  margin: 0 auto;
+  width: 110px;
+  height: 110px;
+  border: 2px solid rgb(255, 44, 74);
+  border-radius: 50%;
+  padding-top: 20px;
+  color: rgb(255, 44, 74);
+  font-size: 250%;
+  font-weight: 900;
+}
+
+.confidence-reasons__text {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.small-t {
+  font-size: 40%;
+}
+
+/* "Чтобы оформить визу" */
+.visa-order {
+  margin: 120px auto 0 auto;
+  position: relative;
+}
+
+.visa-order h2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 49px;
+  font-weight: 700;
+}
+
+.visa-order__line {
+  margin: 3px auto 0 auto;
+  font-size: 41px;
+}
+
+.visa-order__line a {
+  text-decoration: none;
+  font-family: 'Oswald', arial;
+  text-transform: uppercase;
+  background-color: rgb(255, 44, 74);
+  color: rgb(255, 255, 255);
+}
+
+.visa-order__line a:hover {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: rgb(121, 189, 190);
+}
+
+.visa-order__line span {
+  margin-left: -9px;
+}
+
+.visa-order__list {
+  margin: 60px auto 0 auto;
+}
+
+.visa-order__list ul {
+  list-style: none;
+}
+
+.visa-order__list li {
+  display: none;
+  margin-top: 18px;
+  border-radius: 10px;
+  background-color: rgb(239, 239, 239);
+}
+
+.visa-order__list li:last-of-type img {
+  opacity: 0;
+}
+
+.visa-order__list_arrow {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: 75px;
+  position: relative;
+  top: 60px;
+  z-index: 10;
+}
+
+.visa-order__list_symbol {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 55px;
+  vertical-align: middle;
+  text-align: center;
+  color: rgb(121, 189, 190);
+}
+
+.visa-order__list_number {
+  display: inline-block;
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  font-weight: 700;
+  vertical-align: top;
+  border: 1px solid rgb(255, 44, 74);
+  background-color: rgb(255, 44, 74);
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.visa-order__list_number div {
+  padding: 0;
+  text-align: center;
+}
+
+.visa-order__list_text {
+  display: inline-block;
+  padding: 0;
+  padding-left: 15px;
+  vertical-align: top;
+  text-align: left;
+  font-size: 25px;
+}
+
+.visa-em {
+  font-weight: 900;
+}
+
+.visa-order__pic {
+  display: none;
+  position: absolute;
+  top: 450px;
+  left: 700px;
+}
+
+/* "Наши партнеры" */
+.partners {
+  margin: 0;
+  margin-top: 100px;
+  padding-bottom: 70px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(121, 189, 190);
+}
+
+.partners::before {
+  content: "";
+  border: 5px solid transparent;
+  border-top: 5px solid white;
+}
+
+.partners::after {
+  content: "";
+  border: 5px solid transparent;
+  border-bottom: 5px solid white;
+}
+
+.partners h2 {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  padding-top: 60px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.partners__contnd {
+  color: rgb(255, 255, 255);
+  background-color: rgb(121, 189, 190);
+  margin-top: 30px;
+}
+
+.partners__list {
+  margin-top: 20px;
+}
+
+.partners__list-box {
+  background-color: rgb(255, 255, 255);
+}
+
+.partners__list-box img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* "Мы помогаем" */
+.helpline {
+  margin: 0;
+  margin-top: 70px;
+  padding-bottom: 70px;
+}
+
+.helpline h2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 63px;
+  font-weight: 700;
+}
+
+.helpline__subheader {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 80px;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.helpline__list {
+  margin-top: 50px;
+}
+
+.helpline__list_box p {
+  font-size: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.helpline__list_box img {
+  height: 200px;
+}
+
+/* покручу картинки */
+.animated.flip {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-animation-name: flip;
+  animation-name: flip;
+
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.flip.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.help-movie_1 {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.help-movie_2 {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
+}
+
+.help-movie_3 {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 13s;
+  animation-delay: 13s;
+}
+
+@-webkit-keyframes flip {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: cubic-bezier(1, .03, .73, .26);
+    animation-timing-function: cubic-bezier(1, .03, .73, .26);
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: cubic-bezier(1, .03, .73, .26);
+    animation-timing-function: cubic-bezier(1, .03, .73, .26);
+  }
+
+  50% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: cubic-bezier(1, .03, .73, .26);
+    animation-timing-function: cubic-bezier(1, .03, .73, .26);
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+    -webkit-animation-timing-function: cubic-bezier(1, .03, .73, .26);
+    animation-timing-function: cubic-bezier(1, .03, .73, .26);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    -webkit-animation-timing-function: cubic-bezier(1, .03, .73, .26);
+    animation-timing-function: cubic-bezier(1, .03, .73, .26);
+  }
+}
+
+@keyframes flip {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: cubic-bezier(1, .03, .73, .26);
+    animation-timing-function: cubic-bezier(1, .03, .73, .26);
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: cubic-bezier(1, .03, .73, .26);
+    animation-timing-function: cubic-bezier(1, .03, .73, .26);
+  }
+
+  50% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: cubic-bezier(1, .03, .73, .26);
+    animation-timing-function: cubic-bezier(1, .03, .73, .26);
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
+    -webkit-animation-timing-function: cubic-bezier(1, .03, .73, .26);
+    animation-timing-function: cubic-bezier(1, .03, .73, .26);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    -webkit-animation-timing-function: cubic-bezier(1, .03, .73, .26);
+    animation-timing-function: cubic-bezier(1, .03, .73, .26);
+  }
+}
+
+/* "Мы готовы решить" */
+.problemsolve {
+  margin: 0;
+}
+
+.problemsolve__header {
+  margin-top: 40px;
+  padding-top: 40px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(234, 64, 88);
+}
+
+.problemsolve__header h2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 43px;
+  font-weight: 700;
+}
+
+.problemsolve__header p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.problemsolve__list {
+  margin: 0;
+  color: rgb(255, 255, 255);
+  background-color: rgb(234, 64, 88);
+}
+
+.problemsolve__list_box img {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+}
+
+.problemsolve__list_box p {
+  font-size: 25px;
+}
+
+.problemsolve__hope {
+  margin-top: 30px;
+}
+
+.problemsolve__calm {
+  font-size: 60px;
+  font-weight: 900;
+  color: rgb(255, 44, 74);
+}
+
+.problemsolve__promise {
+  padding: 15px 0 3px 2px;
+  font-size: 23px;
+  font-weight: normal;
+}
+
+/* "С нами удобно работать!" */
+.comfortable {
+  margin: 85px auto 0 auto;
+  position: relative;
+}
+
+.comfortable__pic {
+  position: absolute;
+  right: -60px;
+  top: 480px;
+  z-index: 10;
+}
+
+.comfortable h2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.comfortable__list {
+  margin-top: 50px;
+  padding-left: 80px;
+  z-index: 5;
+}
+
+.comfortable__list_internal {
+  list-style-type: disc;
+}
+
+.comfortable__list_itemh {
+  padding: 10px 0;
+  font-size: 40px;
+  border: none;
+}
+
+.item-t {
+  border-top: 1px dashed rgb(0, 0, 0);
+}
+
+.comfortable__list_item {
+  padding: 5px 0 5px 60px;
+  font-size: 22px;
+  border: none;
+}
+
+/* нижняя картинка */
+.bottom-pic {
+  position: absolute;
+  height: 920px;
+  /*	<img src="http://nesiditsa.ru/wp-content/uploads/2014/05/image00110.jpg" alt="Курорт">*/
+  background-image: linear-gradient(to bottom right, white 0%, transparent 100%), url("http://nesiditsa.ru/wp-content/uploads/2014/05/image00110.jpg");
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+  background-position: center;
+  -moz-background-size: 100%;
+  /* Firefox 3.6+ */
+  -webkit-background-size: 100%;
+  /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%;
+  /* Opera 9.6+ */
+  background-size: 100%;
+  /* Современные браузеры */
+  background-color: transparent;
+  overflow: hidden;
+}
+
+/* "Остались вопросы?" */
+.bottom-stripe {
+  margin: 70px auto 0 auto;
+}
+
+.bottom-stripe__header h2 {
+  position: relative;
+  top: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.bottom-stripe__map {
+  /*position: relative;*/
+  top: 1010px;
+  margin-bottom: 30px;
+}
+
+.bottom-stripe__map_iframe {
+  height: 600px;
+  width: 100%;
+}
+
+.bottom-stripe__map_textbox {
+  position: absolute;
+  top: 140px;
+  left: 45px;
+  width: 490px;
+  height: 320px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.8;
+}
+
+.bottom-stripe__map_textbox p:nth-child(1) {
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.bottom-stripe__map_textbox p:nth-child(2) {
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.bottom-stripe__map_textbox p:nth-child(3),
+.bottom-stripe__map_textbox p:nth-child(4) {
+  margin: 0;
+  padding: 0;
+  padding-top: 12px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.bottom-stripe__map_promise-visa {
+  position: absolute;
+  top: 480px;
+  left: 340px;
+  height: 55px;
+  width: 650px;
+  background-color: rgb(255, 44, 74);
+}
+
+.bottom-stripe__map_promise-visa p {
+  padding: 0;
+  font-size: 33px;
+  color: rgb(255, 255, 255);
+}
+
+/* footer section */
+.footer-stripe {
+  position: relative;
+  top: 1080px;
+  background-color: rgb(135, 206, 235);
+}
+
+.footer-stripe__copyright {
+  color: rgb(255, 255, 255);
+}
+
+.footer-stripe__payments {}
+
+.footer-stripe__payments img:first-of-type {
+  height: 70px;
+  padding-left: 39%;
+  padding-top: 12px;
+}
+
+.footer-stripe__payments img:last-of-type {
+  margin-left: 15px;
+  height: 70px;
+  padding-top: 8px;
+}
+
+/* adaptive section */
+@media (max-width: 992px) {
+  .header-block div h1 {
+    font-size: 16px;
+  }
+
+  button .stop-move {
+    font-weight: 400;
+  }
+}

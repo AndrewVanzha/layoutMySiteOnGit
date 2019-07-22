@@ -1,0 +1,305 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url(../fonts/ptsans.woff) format('woff'), url(../fonts/ptsans.woff2) format('woff2'),
+    url(../fonts/ptsansbold.woff) format('woff'), url(../fonts/ptsansbold.woff2) format('woff2');
+  font-style: normal;
+  font-weight: normal;
+  font-weight: bold;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-stretch: normal;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: rgb(0, 0, 0);
+  background-color: rgb(238, 238, 238);
+  width: 1280px;
+  /*  border: 1px dashed red;*/
+}
+
+.main-header {
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+  height: 773px;
+}
+
+.inner-header {
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+  height: 562px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  background-image: url("../img/filter-background.jpg");
+  /*alt="размытый вид на горы"*/
+  background-repeat: no-repeat;
+  background-position: left -240px;
+}
+
+.header-nav {
+  height: 56px;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  /*  height: 12px;*/
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.site-nav a {
+  height: 56px;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.site-nav div {
+  width: 239px;
+}
+
+.img_logo {
+  width: 244px;
+  height: 71px;
+  background-color: transparent;
+/*  opacity: 1;*/
+}
+
+.site-nav,
+.hotels-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav {
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.back-pic {
+  clear: both;
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+  /* 773-56 */
+  height: 717px;
+  color: rgb(256, 256, 256);
+  background-color: rgb(0, 0, 0);
+  background-image: url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
+  /*  border: 1px dashed red;*/
+}
+
+.intro-center {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  padding-top: 76px;
+  /* (132-56)px */
+}
+
+.zigzag_field {
+  width: auto;
+  height: 59px;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: -267px;
+}
+
+.note_box {
+  height: 216px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: rgb(256, 256, 256);
+}
+
+.announce-first {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 61px;
+  font-family: PTSans-Bold;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.24;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(256, 256, 256);
+}
+
+.announce-second {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 38px;
+  padding-bottom: 56px;
+  text-align: center;
+  color: rgb(33, 33, 33);
+  background-color: rgb(256, 256, 256);
+  /*  border-bottom: 1px dashed red;*/
+}
+
+.choice_interest {
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+  /*  height: 217px;будет!!*/
+  /* 273-56 */
+  color: rgb(256, 256, 256);
+}
+
+.objects_for_interest {
+  margin: 0 auto;
+  padding: 0;
+  margin-top: -289px;
+  /*562-289*/
+  color: rgb(33, 33, 33);
+  background-color: rgb(256, 256, 256);
+}
+
+.small-text,
+.menu-choice a {
+  font-family: PTSans;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+
+.hotels {
+  margin: 0 auto;
+  padding: 0;
+  color: rgb(33, 33, 33);
+  background-color: rgb(256, 256, 256);
+}
+
+.hotels-list {
+  width: auto;
+}
+
+.hotels-list li {
+  padding: 30px 73px 30px 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px dashed blue;
+}
+
+.hotels-list li>img {
+  margin-right: 30px;
+}
+
+.button-block {
+  height: 57px;
+  width: 268px;
+  /*258px?*/
+  display: table;
+  border: 1px dashed red;
+}
+
+.bb-header {
+  padding: 0;
+  margin: 0;
+  display: table-header-group;
+/*  display: table-cell;*/
+}
+.hotel-prices {
+  display: table-row-group;
+}
+.choice-buttons {
+  display: table-row-group;
+}
+.bb-text-1 {
+  padding: 0;
+  margin: 0;
+  display: table-cell;
+}
+.bb-text-2 {
+  padding: 0;
+  margin: 0;
+  display: table-cell;
+}
+.bb-hotel-detail {
+  padding: 0;
+  margin: 0;
+  display: table-cell;
+}
+.bb-hotel-book {
+  padding: 0;
+  margin: 0;
+  display: table-cell;
+}
+
+.topic-style {
+  font-family: PTSans-Bold;
+  font-size: 21px;
+  font-weight: bold;
+  /*  line-height: 1.24;*/
+  color: rgb(0, 0, 0);
+  /* 773-(140+353+132) */
+  /*  height: 48px;*/
+}
+
+.topic-style-center {
+  text-align: center;
+}
+
+.topic-style-left {
+  text-align: left;
+}
+.gallery-text {
+  text-align: left;
+  color: rgb(51, 51, 51);
+}
+
+.button {
+  height: 27px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-left: 17px;
+  padding-right: 16px;
+  vertical-align: middle;
+  border: none;
+}
+
+.gallery-button-detail {
+  background-color: rgb(136, 172, 192);
+  font-weight: bold;
+}
+
+.gallery-button-book {
+  background-color: rgb(66, 47, 49);
+  font-weight: bold;
+/*  margin-left: 6px;*/
+}
+.stars-block {
+  align-self: flex-start;
+}
+.rating-box {
+  align-self: flex-end;
+  text-align: center;
+  color: rgb(102, 102, 102);
+}
+
+.footer-copyright b {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.footer-copyright a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
