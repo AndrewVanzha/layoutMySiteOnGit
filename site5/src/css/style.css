@@ -1,0 +1,109 @@
+.header-block {
+  margin: 0 auto;
+  padding: 17px 23px;
+  background-color: aquamarine;
+}
+
+h1 {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+/*
+.container {
+  margin: 0 auto;
+  width: 1024px;
+}
+*/
+h2 {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.button-block {
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 18px 0;
+  background-color: darkgrey;
+  /*display: flex;
+  justify-content: space-around;
+  align-items: center;*/
+}
+
+.press-left-button {
+  font-size: 22px;
+  color: brown;
+  background-color: yellowgreen;
+}
+
+.press-right-button {
+  font-size: 22px;
+  color: brown;
+  background-color: rosybrown;
+}
+
+.appl-block {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 12px;
+  cursor: pointer;
+  text-align: left;
+  color: crimson;
+  font-weight: 800;
+  border: 2px solid darkblue;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.field {
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.field-div {
+  max-height: 96px;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  border: 2px solid #aaa815;
+  background-color: #d6d58d;
+  margin-top: 3px;
+  padding: 10px;
+}
+
+.box:last-child {
+  margin-bottom: 0;
+}
+
+.text-edit {
+  color: #220435;
+}
+
+.text-show {
+  color: #7e13c5;
+}
+
+.time-show {
+  font-size: 0.65em;
+  color: #7e13c5;
+  /*vertical-align: middle;*/
+}
+
+button.btn {
+  padding: 4px;
+  /*margin-top: 10px;*/
+  /*cursor: pointer;*/
+  font-size: 0.65em;
+  color: #fff;
+  outline: none;
+}
+
+button.btn:hover {
+  color: #000;
+}
