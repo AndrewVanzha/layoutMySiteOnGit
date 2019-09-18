@@ -15,12 +15,7 @@ h1 {
   padding: 0;
   text-align: center;
 }
-/*
-.container {
-  margin: 0 auto;
-  width: 1024px;
-}
-*/
+
 h2 {
   margin: 0 auto;
   padding: 0;
@@ -71,7 +66,7 @@ h2 {
 }
 
 .field-div {
-  max-height: 96px;
+  max-height: 106px;
   margin: 0;
   padding: 0;
 }
