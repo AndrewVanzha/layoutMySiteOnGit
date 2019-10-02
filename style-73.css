@@ -424,6 +424,8 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  justify-content: space-between;
+  list-style-type: none;
 }
 
 .fixed-container__dealbox-position {
@@ -431,13 +433,12 @@ h2 {
   padding: 0;
 }
 
-.fixed-container__dealbox a {
+.fixed-container__dealbox li {
   display: block;
   margin-top: 89px;
   padding: 0;
   font-size: 20px;
   height: 150px;
-  cursor: pointer;
   color: rgb(137, 147, 173);
   text-align: center;
   text-decoration: none;
@@ -446,27 +447,27 @@ h2 {
   /*outline: 1px solid sandybrown;*/
 }
 
-.fixed-container__dealbox a:nth-of-type(1) {
+.fixed-container__dealbox li:nth-of-type(1) {
   width: 257px;
   background-image: url("img/do-pic-1.png");
 }
 
-.fixed-container__dealbox a:nth-of-type(2) {
+.fixed-container__dealbox li:nth-of-type(2) {
   width: 269px;
   background-image: url("img/do-pic-2.png");
 }
 
-.fixed-container__dealbox a:nth-of-type(3) {
+.fixed-container__dealbox li:nth-of-type(3) {
   width: 202px;
   background-image: url("img/do-pic-3.png");
 }
 
-.fixed-container__dealbox a:nth-of-type(4) {
+.fixed-container__dealbox li:nth-of-type(4) {
   width: 247px;
   background-image: url("img/do-pic-4.png");
 }
 
-.fixed-container__dealbox a p {
+.fixed-container__dealbox li p {
   margin: 0;
   padding: 0;
   padding-top: 90px;
