@@ -319,9 +319,9 @@ $(function () {
       $('.header-line').append( // вывожу popup-меню
         '<div class="popup-box">' +
         '<div class="header-line__nav-list">' +
-        '<li><a href="#">Услуги</a></li>' +
-        '<li><a href="#">Портфолио</a></li>' +
-        '<li><a href="#">Стоимость</a></li>' +
+        '<li><a href="#deal-article">Услуги</a></li>' +
+        '<li><a href="#examples-section">Портфолио</a></li>' +
+        '<li><a href="#price-section">Стоимость</a></li>' +
         '</div>' +
         '</div>');
     } else {

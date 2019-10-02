@@ -212,6 +212,7 @@ body {
   display: block;
   padding: 8px 0;
   text-decoration: none;
+  cursor: pointer;
   color: rgb(31, 31, 36);
 }
 
