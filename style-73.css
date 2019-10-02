@@ -544,7 +544,7 @@ h2 {
 }
 
 .site-pic2 {
-  object-position: 20% 65%;
+  object-position: center;
 }
 
 .site-pic3 {
@@ -557,6 +557,10 @@ h2 {
 
 .site-pic5 {
   object-position: center;
+}
+
+.site-pic6 {
+  object-position: 55% 65%;
 }
 
 .site-title {
