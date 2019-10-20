@@ -180,6 +180,24 @@ button {
   border-radius: 34px;
 }
 
+.button_registr {
+  display: inline-block;
+  padding: 14px 31px;
+  margin-top: 40px;
+  font-size: 1.6em;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 34px;
+}
+
+
+.button_registr:hover {
+  text-decoration: none;
+  color: white;
+}
+
 .subject-container__registr {
   color: white;
 }
@@ -244,6 +262,7 @@ button {
 }
 
 .whatabout-container__registr {
+  margin-left: 120px;
   color: red;
 }
 
@@ -282,6 +301,7 @@ button {
 }
 
 .know-container__registr {
+  margin-left: 120px;
   color: darkorange;
 }
 
@@ -560,6 +580,7 @@ button {
 }
 
 .form-container__formbox {
+  position: relative;
   margin-top: 50px;
   padding: 30px 0 25px 0;
   border: 1px solid #ccc;
@@ -611,6 +632,22 @@ button {
   font-size: 1.3em;
   font-weight: 600;
   color: white;
+}
+
+.form-container__form_ok {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 100px;
+  padding: 20px 10px;
+  font-size: 2.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: rgb(255, 78, 46);
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 30px;
 }
 
 /**/
@@ -705,6 +742,10 @@ button {
   color: darkblue;
 }
 
+.question-container__div_button {
+  cursor: pointer;
+}
+
 /**/
 .share-container {
   padding-top: 50px;
@@ -729,12 +770,13 @@ button {
   font-weight: 500;
 }
 
-.share-container__div_left p a,
-.share-container__div_right p a {
+.share-container__div_offer1,
+.share-container__div_offer2 {
   font-size: 1.1em;
   font-weight: 600;
   text-decoration: underline;
   color: yellow;
+  cursor: pointer;
 }
 
 /* подвал */
@@ -802,28 +844,197 @@ button {
 }
 
 
+
+/* модальные окна */
+/* https://myrusakov.ru/js-modal-boxes.html */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /*background-color: rgb(0, 0, 0);*/
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  /*animation-name: animatew;
+  animation-duration: 0.5s;*/
+  position: relative;
+  background-color: rgb(225, 190, 231);
+  margin: auto;
+  padding: 0;
+  border: 5px solid rgb(123, 31, 162);
+  width: 50%;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+  -webkit-animation-name: animateTop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animateTop;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animateTop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animateTop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.close1,
+.close2 {
+  color: rgb(255, 255, 255);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close2:hover,
+.close1:focus,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: rgb(161, 52, 180);
+  color: rgb(255, 255, 255);
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: rgb(161, 52, 180);
+  color: rgb(255, 255, 255);
+}
+
+/* мое окно */
+.popup__modal {
+  display: none;
+  width: 390px;
+  height: 230px;
+  background-color: #f5eee1;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 23px 0 0 27px;
+  -webkit-animation-name: animateFold;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animateUnFold;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animateUnFold {
+  from {transform:scale(0); opacity:0} 
+  to {transform:scale(1); opacity:1}
+}
+
+@keyframes animateUnFold {
+  from {transform:scale(0); opacity:0} 
+  to {transform:scale(1); opacity:1}
+}
+
+.popup__modal_active {
+  display: block;
+}
+
+.popup__modal-header {
+  padding: 2px 12px;
+  background-color: #9C27B0;
+  color: white;
+}
+
+.popup__modal-header h2 {
+  display: inline-block;
+  padding: 2px 0;
+  margin: 0;
+  font-size: 24px;
+  /*padding: 2px 16px;*/
+}
+
+.popup__close {
+  display: inline-block;
+  margin: 0;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.popup__modal-body {
+  margin: 0;
+  padding: 2px 16px;
+}
+
+.popup__modal-footer {
+  padding: 2px 16px;
+  background-color: #9C27B0;
+  color: white;
+}
+
+.bg_popup {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0, .4);
+}
+
+
 /* адаптивный раздел */
 @media (max-width: 2180px) {
   .whatabout-container__div {
     padding-left: 40px;
     /*outline: 1px solid darkorange;*/
   }
-  
+
   .whatabout-container__list li,
   .whatabout-container__list li span {
     font-size: 1.1em;
   }
-  
+
   .know-container__div {
     padding-left: 40px;
     /*outline: 1px solid darkorange;*/
   }
-    
+
   .know-container__list li,
   .know-container__list li span {
     font-size: 1.1em;
   }
+
+}
+
+
+@media (max-width: 1250px) {
+  .whatabout-container__registr {
+    margin-left: 10px;
+  }
+
+  .know-container__registr {
+    margin-left: 10px;
+  }
   
+  .swiper-slide__title {
+    padding: 8px 10px 8px 10px;
+  }
+
 }
 
 
@@ -835,15 +1046,7 @@ button {
   .program-container__list_img {
     border-width: 2px;
   }
-  
-}
 
-
-@media (max-width: 1250px) {
-  .swiper-slide__title {
-    padding: 8px 10px 8px 10px;
-  }
-  
 }
 
 
@@ -859,6 +1062,11 @@ button {
   .talk-container,
   .time-container {
     background-size: 100% 100%;
+  }
+
+  .form-container__form_ok {
+    font-size: 1.7em;
+    font-weight: 600;
   }
 
 }
@@ -907,6 +1115,10 @@ button {
 }
 
 @media (max-width: 768px) {
+  .subject-container__div {
+    padding-top: 235px;
+  }
+
   .program-container__list_img {
     border: none;
   }
@@ -916,11 +1128,15 @@ button {
     padding: 10px 0;
   }
 
+  .form-container__form_ok {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+
 }
 
 
 @media (max-width: 580px) {
-
   .subject-container__info1 p span,
   .subject-container__info2 p span {
     font-size: 0.9em;
@@ -936,6 +1152,31 @@ button {
 
   * h2 {
     font-size: 1.6em !important;
+  }
+
+  .form-container__form_ok {
+    font-size: 0.9em;
+    font-weight: 400;
+  }
+
+  .subject-container__registr {
+    font-size: 1.1em;
+  }
+
+  .whatabout-container__registr {
+    font-size: 1.1em;
+  }
+
+  .know-container__registr {
+    font-size: 1.1em;
+  }
+
+  .talk-container__registr {
+    font-size: 1.1em;
+  }
+
+  .time-container__registr {
+    font-size: 1.1em;
   }
 
 }

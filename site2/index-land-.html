@@ -7,11 +7,9 @@
   <title>Landing page</title>
   <!--<script src="jquery-3.4.0.min.js"></script>-->
   <link rel="stylesheet" href="swiper.min.css">
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
-
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -20,24 +18,12 @@
 
   <link rel="stylesheet" type="text/css" href="style-land-1.css">
   <link rel="stylesheet" type="text/css" href="main-land-1.css">
-  <script src="main-land-1.js" defer></script>
-  <script>
-    var numPic = 3;
-
-    let winWidth = $(window).width();
-    if (winWidth < 1250 && winWidth > 981) {
-      numPic = 2;
-    } else if (winWidth < 981) {
-      numPic = 1;
-    } else {
-      numPic = 3;
-    }
-  </script>
+  <script src="main-land-1.js"></script>
 </head>
 
 <body>
 
-  <header class="header-line container p-0 mx-auto clearfix">
+  <header class="header-line container p-0 clearfix">
     <div class="header-line__block container fixed-container d-flex justify-content-between mx-auto p-1">
       <div class="header-line__logo p-1">
         <img class="logo-img" src="img/do-pic-2.png" alt="логотип" />
@@ -69,7 +55,7 @@
   <main>
 
     <section class="central-container p-0">
-      <article class="subject-container container fixed-container text-center" id="subject-article">
+      <article class="subject-container container fixed-container" id="subject-article">
         <div class="subject-container__div row d-flex flex-wrap justify-content-center">
           <div class="subject-container__logo col-lg-1 col-sm-12 p-1 m-0">
             <img class="logo-img" src="img/do-pic-2.png" alt="логотип" />
@@ -110,8 +96,7 @@
           </p>
         </div>
 
-        <!--<button class="subject-container__registr button_registr mx-auto" type="button" name="registr">Зарегистрироваться</button>-->
-        <a class="subject-container__registr button_registr mx-auto" href="#form-article">Зарегистрироваться</a>
+        <button class="subject-container__registr mx-auto" type="button" name="registr">Зарегистрироваться</button>
       </article>
 
       <article class="invite-container container-fluid fixed-container" id="invite-article">
@@ -135,9 +120,7 @@
               <li class="p-0 col-lg-12"><span>СПИКЕРЫ-ПРАКТИКИ</span>, а не теоретики, обещающие "золотые горы"</li>
               <li class="p-0 col-lg-12"><span>КОНЦЕНТРАТ</span> опыта, знаний и мотивации</li>
             </ul>
-            <!--<button class="whatabout-container__registr button_registr mx-auto" type="button"
-              name="registr">Зарегистрироваться</button>-->
-            <a class="whatabout-container__registr button_registr" href="#form-article">Зарегистрироваться</a>
+            <button class="whatabout-container__registr mx-auto" type="button" name="registr">Зарегистрироваться</button>
           </div>
         </div>
       </article>
@@ -153,8 +136,7 @@
               <li class="p-0 col-lg-12"><span>Где</span> прячутся слабые места вашей воронки продаж</li>
               <li class="p-0 col-lg-12"><span>Что</span> скрывают известные компании вашего города</li>
             </ul>
-            <!--<button class="know-container__registr mx-auto" type="button" name="program">Посмотреть программу</button>-->
-            <a class="know-container__registr button_registr" href="#program-article">Посмотреть программу</a>
+            <button class="know-container__registr mx-auto" type="button" name="program">Посмотреть программу</button>
           </div>
           <div class="know-container__img col-lg-6 p-0">
             <img src="img/pic-it7.jpg" alt="картинка цифрового форума" />
@@ -367,9 +349,7 @@
             <p class="my-3 p-0 col-sm-12">Сейчас к вам в город приезжают эксперты федерального уровня. Выступают
               практики с успешным бизнесом.</p>
             <p class="my-3 p-0 col-sm-12">Вы бесплатно забираете их знания и опыт!</p>
-            <!--<button class="talk-container__registr button_registr mx-auto" type="button"
-              name="registr">Зарегистрироваться</button>-->
-            <a class="talk-container__registr button_registr mx-auto" href="#form-article">Зарегистрироваться</a>
+            <button class="talk-container__registr mx-auto" type="button" name="registr">Зарегистрироваться</button>
           </div>
         </div>
       </article>
@@ -457,9 +437,7 @@
               </div>
               <button class="form-container__form_button mx-auto" type="submit" name="user_submit">Отправить</button>
             </form>
-            <p class="form-container__form_ok">Ваши данные зарегистрированы</p>
           </div>
-        </div>
       </article>
 
       <article class="place-container container fixed-container" id="place-article">
@@ -473,7 +451,6 @@
             <p class="p-0 col-lg-12 text-center">Адрес: г. Нижний Новгород, ул. Советская, д. 12</p>
             <p class="p-0 col-lg-12 text-center">Дата: 19 октября</p>
           </div>
-        </div>
       </article>
 
       <article class="map-container container fixed-container" id="map-article">
@@ -490,9 +467,7 @@
             <p class="my-3 p-0 col-lg-12">Вам не хватает времени для собственного развития?</p>
             <p class="my-3 p-0 col-lg-12">Посмотрите на конкурентов. У них те же 24 часа в сутках, как и у вас.</p>
             <p class="my-3 p-0 col-lg-12">Но они нашли время прокачаться.<br>Сможете и вы!</p>
-            <!--<button class="time-container__registr button_registr mx-auto" type="button"
-              name="registr">Зарегистрироваться</button>-->
-            <a class="time-container__registr button_registr mx-auto" href="#form-article">Зарегистрироваться</a>
+            <button class="time-container__registr mx-auto" type="button" name="registr">Зарегистрироваться</button>
           </div>
         </div>
       </article>
@@ -502,18 +477,14 @@
           <div class="share-container__div col-lg-12 d-flex flex-wrap justify-content-around mx-auto">
             <div class="share-container__div_left p-4 col-lg-6">
               <h3 class="p-2 col-lg-12 text-center">СТАНЬТЕ ПАРТНЕРОМ ФОРУМА</h3>
-              <p class="p-2 col-lg-12 text-center">Вы хотите стать спикером или спонсором «Территории продаж»?
-                <span class="share-container__div_offer1">Сообщите нам об этом</span>
-                как можно скорее.
-              </p>
+              <p class="p-2 col-lg-12 text-center">Вы хотите стать спикером или спонсором «Территории продаж»? <a
+                  href="mailto:zzz@qq.u">Сообщите нам об этом</a> как можно скорее.</p>
             </div>
             <div class="share-container__div_right p-4 col-lg-6">
               <h3 class="p-2 col-lg-12 text-center">ОСТАВАЙТЕСЬ С НАМИ</h3>
               <p class="p-2 col-lg-12 text-center">Не нашли свой город в графике или не смогли участвовать в этот раз?
-                Не расстраивайтесь! <br>
-                <span class="share-container__div_offer2">Подпишитесь на нашу рассылку</span>
-                и заранее узнавайте о ближайших мероприятиях в вашем городе.
-              </p>
+                Не расстраивайтесь! <br><a href="mailto:zzz@qq.u">Подпишитесь на нашу рассылку</a> и заранее узнавайте о
+                ближайших мероприятиях в вашем городе.</p>
             </div>
           </div>
         </div>
@@ -523,7 +494,7 @@
         <div class="container row p-0 mx-auto">
           <h2 class="p-0 col-lg-12 text-center">ЕСТЬ ВОПРОСЫ? ЗАДАВАЙТЕ!</h2>
           <div class="question-container__div col-lg-12 d-flex flex-wrap justify-content-around mx-auto">
-            <a class="col-lg-4 p-0 mx-auto text-center question-container__div_button">
+            <a class="col-lg-4 p-0 mx-auto text-center">
               <p class="my-3 p-0 col-lg-12 text-center"><i class="fa fa-building-o fa-4x" aria-hidden="true"></i></p>
               <p class="my-3 p-0 col-lg-12 text-center">Компания ААА</p>
               <p class="my-3 p-0 col-lg-12 text-center">Иван У</p>
@@ -551,9 +522,7 @@
         <div class="footer-container__div container row p-0 d-flex flex-wrap justify-content-around mx-auto">
           <ul class="footer-container__div_social col-lg-4 d-flex flex-nowrap justify-content-between mx-auto">
             <li><a href="https://vk.com/feed" target="_blank"></a></li>
-            <li><a
-                href="https://www.facebook.com/campaign/landing.php?campaign_id=1669307470&extra_1=s%7Cc%7C323127629986%7Ce%7C%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA%7C&placement=&creative=323127629986&keyword=%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA&partner_id=googlesem&extra_2=campaignid%3D1669307470%26adgroupid%3D63446529566%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D1t1%26target%3D%26targetid%3Dkwd-300034615170%26loc_physical_ms%3D1011981%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjwldHsBRAoEiwAd0JybTeSS4n1L0P0ZPO9iQlFhG6WDeV586ItAcoV75QkLDAeAfW28s_N8BoCpoMQAvD_BwE"
-                target="_blank"></a></li>
+            <li><a href="https://www.facebook.com/campaign/landing.php?campaign_id=1669307470&extra_1=s%7Cc%7C323127629986%7Ce%7C%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA%7C&placement=&creative=323127629986&keyword=%D1%84%D0%B5%D0%B9%D1%81%D0%B1%D1%83%D0%BA&partner_id=googlesem&extra_2=campaignid%3D1669307470%26adgroupid%3D63446529566%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D1t1%26target%3D%26targetid%3Dkwd-300034615170%26loc_physical_ms%3D1011981%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjwldHsBRAoEiwAd0JybTeSS4n1L0P0ZPO9iQlFhG6WDeV586ItAcoV75QkLDAeAfW28s_N8BoCpoMQAvD_BwE" target="_blank"></a></li>
             <li><a href="https://twitter.com/?lang=ru" target="_blank"></a></li>
             <li><a href="https://www.instagram.com/?hl=ru" target="_blank"></a></li>
           </ul>
@@ -562,54 +531,6 @@
       </article>
     </section>
   </footer>
-
-  <div id="modalW1" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2>Вы спикер или спонсор?</h2>
-        <span class="close1">X</span>
-      </div>
-      <div class="modal-body">
-        <p>Сообщите о себе</p>
-        <p>О чем Вы желаете сделать сообщение?</p>
-      </div>
-      <div class="modal-footer">
-        <h3>Успех продаж</h3>
-      </div>
-    </div>
-  </div>
-
-  <div id="modalW2" class="modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2>Подписка на рассылку</h2>
-        <span class="close2">X</span>
-      </div>
-      <div class="modal-body">
-        <p>На что хотите подписаться?</p>
-        <p>Как часто будете получать рассылку?</p>
-      </div>
-      <div class="modal-footer">
-        <h3>Успех продаж</h3>
-      </div>
-    </div>
-  </div>
-
-  <div id="modalW3" class="popup__modal">
-    <div class="popup__modal-header">
-      <h2>Мое модальное окно</h2>
-      <span class="popup__close">X</span>
-    </div>
-    <div class="popup__modal-body">
-      <p>Консультирую</p>
-      <p>Обучаю</p>
-    </div>
-    <div class="popup__modal-footer">
-      <h3>Успех продаж</h3>
-    </div>
-  </div>
-
-  <div class="bg_popup"></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
