@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>учебный - сайт 3</title>
 
-  <link rel="stylesheet" href="style-site4.css">
+  <link rel="stylesheet" href="style3.css">
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -13,35 +13,42 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <script src="js-site4.js" defer></script>
+  <script src="script3math.js"></script>
+  <script src="script3.js" defer></script>
 </head>
 
 <body>
   <header>
     <div class="container-fluid">
-      <div class="row d-flex justify-content-between header-block">
+      <div class="row d-flex justify-content-center header-block">
         <div class="col-lg-12">
-          <h1>учебная задача / jQuery + Bootstrap</h1>
+          <h1>Тестовая задача / движение в поле</h1>
         </div>
       </div>
-      <div class="row d-flex justify-content-between header-block">
-        <div class="col-lg-3 p-2 leftscore-box">
-          <div class="col-lg-12 leftscore">ГОЛ!</div>
-        </div>
-        <button type="button" class="btn btn-danger w-25 p-2 stop-move">остановить движение</button>
-        <button type="button" class="btn btn-primary w-25 p-2 go-init">перейти в начало</button>
-        <div class="col-lg-3 p-2 rightscore-box">
-          <div class="col-lg-12 rightscore">ГОЛ!</div>
-        </div>
+      <div class="row d-flex justify-content-around header-block">
+        <h2 class="col col-lg-6 subheader">Ткни шарик</h2>
+        <button class="col col-lg-2 col-xs-2 btn btn-warning stop-button">Остановить</button>
       </div>
-  </header>
+      <form class="row d-flex justify-content-around header-block" name="data">
+        <div class="col col-lg-2 col-xs-2 input-label">Скорость (ms): </div>
+        <input class="col col-lg-2 col-xs-2 duration" type="text" name="duration" value="">
+        <div class="col col-lg-2 col-xs-2 input-label">Непрерывность (max 0.1): </div>
+        <input class="col col-lg-2 col-xs-2 smooth" type="text" name="smooth" value="">
+        <button class="col col-lg-2 col-xs-2 btn btn-primary data-button" type="submit">Ввести</button>
+      </form>
+    </header>
 
   <main>
 
     <div class="container football">
-      <img class="field"
-        src="https://raw.githubusercontent.com/yaplusplus/mcs-humanjs/master/day5/jquery/img/field.jpg">
-      <img class="ball" src="https://raw.githubusercontent.com/yaplusplus/mcs-humanjs/master/day5/jquery/img/ball.png">
+      <div class="fieldq field-square">
+        <div class="ballq ball-box ball-position">
+          <div class="center-ball-position"></div>
+        </div>
+        <canvas id="canvas" class="barrier-field" width="700" height="410"></canvas>
+        <div class="ping-message"><span>Ping!</span></div>
+        <div class="arrow arrow-down"></div>
+      </div>
     </div>
 
   </main>
